@@ -4,6 +4,12 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const BUILD_DIR = path.resolve(__dirname, 'dist')
 const APP_DIR = path.resolve(__dirname, 'src')
 
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+
+{
+	plugins: [ new UglifyJSPlugin() ]
+}
+
 module.exports = {
   entry: APP_DIR + '/index.jsx',
   output: {
