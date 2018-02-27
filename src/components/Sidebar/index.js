@@ -8,6 +8,7 @@ const Sidebar = () => {
 }
 
 const Content = styled.aside`
+  display: none;
   position: fixed;
   top: 0;
   right: 0;

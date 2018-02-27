@@ -5,7 +5,9 @@ class WhoWeAre extends Component {
   render () {
     return (
       <Content>
-        Who We Are?
+        World experts/leaders in both institutional and academic finance and economics
+      • Passion for entrepreneurship and financial technology (fintech) • Understand ramifications of blockchain
+      • Equip with ability to execute on ideas
       </Content>
     )
   }
