@@ -1,6 +1,19 @@
 import { rgba } from 'polished'
 import styled, { css } from 'styled-components'
 
+export const Title = styled.h1`
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 3.5em;
+  letter-spacing: .025em;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  ${props => props.italic && css`
+    font-style: italic;
+  `}
+`
+
 export const P = styled.p`
     margin: 0 0 1em;
     font-size: 1em;
