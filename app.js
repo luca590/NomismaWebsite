@@ -8,7 +8,7 @@ var fs = require('fs');
 
 const app = express()
 const server = http.createServer(app)
-app.set('port', (process.env.PORT || 5000))	//do I need to open port 5000 on AWS?
+app.set('port', (process.env.PORT || 8080))	//do I need to open port 5000 on AWS?
 
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
