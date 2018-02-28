@@ -13,7 +13,7 @@ class WhitePaper extends Component {
   render () {
     return (
       <Content>
-        White Paper
+        <a href='https://www.dropbox.com/s/3x69yds1a62s3ei/SummaryDraft_Feb202018HK.pdf?dl=0'> Download White Paper</a>
       </Content>
     )
   }

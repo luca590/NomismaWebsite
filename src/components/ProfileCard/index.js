@@ -36,7 +36,7 @@ export default class ProfileCard extends React.Component {
           actAsExpander={true}
           showExpandableButton={true}
         />
-        <CardTitle title="Overview" subtitle={this.props.subtitle} expandable={true} />
+        <CardTitle title="" subtitle={this.props.subtitle} expandable={true} />
         <CardText expandable={true}>
           {this.props.children}
         </CardText>
