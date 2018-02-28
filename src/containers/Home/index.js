@@ -7,7 +7,7 @@ class Home extends Component {
     return (
       <Content>
         <Title> Introduction </Title>
-        <H1>Quote:<Span italic>“Imperfect as our financial system is, I still find myself admiring it for what it does and imagining how much more impressive it can be in the future.” Finance and the Good Society, by Robert Shiller.”</Span></H1><br/><br/>
+        <H1>Quote:<Span italic>“Imperfect as our financial system is, I still find myself admiring it for what it does and imagining how much more impressive it can be in the future.” Finance and the Good Society, by Robert Shiller.”</Span></H1><br /><br />
         <H1>• Risk sharing is the basic function of finance. Meanwhile, the broad adoption of cryptocurrencies is hampered by the extreme volatility of cryptocurrency prices.</H1>
         <H1>• To our knowledge we are the first to bring this function to cryptocurrencies</H1>
         <H1>• Main distinction of our solution is we use seasoned finance applications and deep financial insights coupled with blockchain tech</H1>
@@ -30,7 +30,7 @@ class Home extends Component {
         <Title> Solution </Title>
         <H1>• The Solution: Nomisma and Risk Sharing on the Blockchain</H1>
         <H1>• Risk sharing and diversification are core concepts in finance.  A fundamental application of finance theory is the creation of tools to customize desired cash flow/investment profiles in line with the risk tolerances of investors. </H1>
-        <H1>• The Nomisma Foundation is a new platform designed to structure and price contingent claims that span the cryptocurrency state space and thus generate fixed income and option claims.  </H1>
+        <H1>• The Nomisma Foundation is a new platform designed to structure and price contingent claims that span the cryptocurrency state space and thus generate fixed income and option claims.</H1>
         <H1>• These claims allow users to match their desired cash flow / risk return profile commensurate to the risk they are willing to undertake.</H1>
 
         <Title> Expansion and Transformation </Title>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Content } from '../../components/General'
-import { Title, H1, H2, Span } from '../../components'
+import { Title, H1 } from '../../components'
 import styled from 'styled-components'
 
 class GetInTouch extends Component {
@@ -8,8 +8,8 @@ class GetInTouch extends Component {
     return (
       <Content>
         <Title> Get In Touch </Title>
-          <H1>Email: nomismafoundation@gmail.com</H1>
-          <Link href='https://join.slack.com/t/nomismaworkspace/shared_invite/enQtMzIxNjk5ODExNDc1LWUwOGI2ODk4NzJiMjUzYWRlYjc1MTgxMGE4MmY3NWM2NTJkNDEwNjU4ODU4ZjI4N2YwOTVhNDg4Y2NjOTE0NTI' target="_blank">Slack link </Link>
+        <H1>Email: nomismafoundation@gmail.com</H1>
+        <Link href='https://join.slack.com/t/nomismaworkspace/shared_invite/enQtMzIxNjk5ODExNDc1LWUwOGI2ODk4NzJiMjUzYWRlYjc1MTgxMGE4MmY3NWM2NTJkNDEwNjU4ODU4ZjI4N2YwOTVhNDg4Y2NjOTE0NTI' target='_blank'>Slack link </Link>
       </Content>
     )
   }

@@ -1,58 +1,43 @@
-import React from 'react';
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import React from 'react'
+import {Card, CardHeader, CardTitle, CardText} from 'material-ui/Card'
 import styled from 'styled-components'
 
 export default class ProfileCard extends React.Component {
-
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
     this.state = {
-      expanded: false,
-    };
+      expanded: false
+    }
   }
 
- 
+  handleExpandChange (expanded) {
+    this.setState({expanded: expanded})
+  }
 
-  handleExpandChange = (expanded) => {
-    this.setState({expanded: expanded});
-  };
-
-  handleToggle = (event, toggle) => {
-    this.setState({expanded: toggle});
-  };
-
-  handleExpand = () => {
-    this.setState({expanded: true});
-  };
-
-  handleReduce = () => {
-    this.setState({expanded: false});
-  };
-
-  render() {
+  render () {
     return (
       <Card
         expanded={this.state.expanded}
-        onExpandChange={this.handleExpandChange}
+        onExpandChange={(expanded) => this.handleExpandChange(expanded)}
         style={styles.card}
       >
         <CardHeader
           title={this.props.name}
           subtitle={this.props.subtitle}
           avatar={<img src={this.props.picURL} style={styles.avatar} />}
-          actAsExpander={true}
-          showExpandableButton={true}
+          actAsExpander
+          showExpandableButton
           titleStyle={styles.title}
           subtitleStyle={styles.subtitle}
         />
-        <CardTitle title="" subtitle={this.props.subtitle} expandable={true} />
-        <CardText expandable={true}>
+        <CardTitle title='' subtitle={this.props.subtitle} expandable />
+        <CardText expandable>
           <Overview>
             {this.props.children}
           </Overview>
         </CardText>
       </Card>
-    );
+    )
   }
 }
 

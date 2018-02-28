@@ -11,7 +11,7 @@ const Aside = () => {
         <Li><NavLink to='/whatWeDo' activeClassName='active'>What we do</NavLink></Li>
         <Li><NavLink to='/howItWorks' activeClassName='active'>How it works</NavLink></Li>
         <Li><NavLink to='/whitePaper' activeClassName='active'>White paper</NavLink></Li>
-        <Li><NavLink to='/blog' activeClassName='active'>Blog</NavLink></Li>
+        {/* <Li><NavLink to='/blog' activeClassName='active'>Blog</NavLink></Li> */}
         <Li><NavLink to='/getInTouch' activeClassName='active'>Get in touch</NavLink></Li>
       </Ul>
     </AsideContainer>
