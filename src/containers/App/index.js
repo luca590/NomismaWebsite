@@ -12,18 +12,20 @@ class App extends Component {
   render () {
     return (
       <MuiThemeProvider>
-        <Header />
-        <Aside />
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/whoWeAre' component={WhoWeAre} />
-          <Route path='/whatWeDo' component={WhatWeDo} />
-          <Route path='/howItWorks' component={HowItWorks} />
-          <Route path='/whitePaper' component={WhitePaper} />
-          <Route path='/blog' component={Blog} />
-          <Route path='/getInTouch' component={GetInTouch} />
-        </Switch>
-        <Sidebar />
+        <Fragment>
+          <Header />
+          <Aside />
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/whoWeAre' component={WhoWeAre} />
+            <Route path='/whatWeDo' component={WhatWeDo} />
+            <Route path='/howItWorks' component={HowItWorks} />
+            <Route path='/whitePaper' component={WhitePaper} />
+            <Route path='/blog' component={Blog} />
+            <Route path='/getInTouch' component={GetInTouch} />
+          </Switch>
+          <Sidebar />
+        </Fragment>
       </MuiThemeProvider>
     )
   }

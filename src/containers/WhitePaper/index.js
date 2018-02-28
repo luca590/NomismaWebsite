@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Content } from '../../components/General'
+import { Title } from '../../components'
+import styled from 'styled-components'
 
 class WhitePaper extends Component {
   goToNext () {
@@ -13,10 +15,21 @@ class WhitePaper extends Component {
   render () {
     return (
       <Content>
-        White Paper
+        <Title> White paper </Title>
+        <Link href='assets/pdf/SummaryDraft_Feb202018HK.pdf' download='SummaryDraft_Feb202018HK.pdf'>Download </Link>
+        <Link href='assets/pdf/SummaryDraft_Feb202018HK.pdf' target='_blank'>View </Link>
       </Content>
     )
   }
 }
+
+const Link = styled.a`
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.8em;
+  letter-spacing: .025em;
+  padding: 10px;
+`
 
 export default WhitePaper
