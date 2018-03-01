@@ -4,7 +4,7 @@ export const Title = styled.h1`
   margin: 0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 3.5em;
+  font-size: 3em;
   letter-spacing: .025em;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -37,7 +37,7 @@ export const H1 = styled.h1`
     margin: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: normal;
-    font-size: 1.8em;
+    font-size: 1.5em;
     letter-spacing: .025em;
     padding: 10px;
   ${props => props.italic && css`
@@ -46,10 +46,11 @@ export const H1 = styled.h1`
 `
 
 export const H2 = styled.h2`
+    margin: 0 1em 1em 0em;
     margin-left: 1em;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: normal;
-    font-size: 1.5em;
+    font-size: 1.3em;
   ${props => props.italic && css`
     font-style: italic;
   `}

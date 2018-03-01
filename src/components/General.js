@@ -5,8 +5,7 @@ export const Wrapper = styled.div`
 `
 
 export const Content = styled.div`
-  margin-left: 20rem;
-  margin-right: 2rem;
+  margin: 0rem 2rem 2rem 20rem;
 `
 
 export const Form = styled.div`
