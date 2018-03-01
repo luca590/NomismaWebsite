@@ -24,7 +24,7 @@ export default class ProfileCard extends React.Component {
         <CardHeader
           title={this.props.name}
           subtitle={this.props.subtitle}
-          avatar={<img src={this.props.picURL} style={styles.avatar} />}
+          avatar={<div style={styles.avatarWrapper}><img src={this.props.picURL} style={styles.avatar} /></div>}
           actAsExpander
           showExpandableButton
           titleStyle={styles.title}
@@ -54,11 +54,15 @@ const styles = {
   card: {
     margin: 10
   },
-  avatar: {
+  avatarWrapper: {
     width: 100,
     height: 100,
+    borderRadius: 100,
+    overflow: 'hidden'
+  },
+  avatar: {
+    width: '100%',
     resizeMode: 'contain',
-    borderRadius: 50,
     backgroundSize: 'cover'
   },
   title: {

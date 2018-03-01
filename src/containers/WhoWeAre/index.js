@@ -40,6 +40,7 @@ class WhoWeAre extends Component {
         </ProfileCard>
         <ProfileCard
           name='Kimon Gomozias'
+          picURL='assets/img/pic_kimon.jpg'
         >
           Kimon started his career at Goldman Sachs in 2003 before moving to ECM, a boutique fixed income asset manager, in 2004 to work on the development of structured fixed income funds.<br /><br />
           Kimon joined the Standard & Poor’s Structured Finance group in 2005 as a Senior Quantitative Analyst where he led the development of the rating methodology and monitoring process for the hybrid synthetic CDO business that involves the securitization and risk sharing of cross-asset (Equity, Credit, Commodity, FX and Rates) derivative exposures.<br /><br />
