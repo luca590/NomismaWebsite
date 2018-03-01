@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Content } from '../../components/General'
-import { Title, ProfileCard } from '../../components'
+import { Title } from '../../components'
 import styled from 'styled-components'
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+import 'react-tabs/style/react-tabs.css'
 
 class WhoWeAre extends Component {
   render () {
@@ -89,7 +89,6 @@ const Name = styled.h1`
 `
 
 const Subtitle = styled.h1`
-  // margin: 0;
   font-family: 'AvenirNextLTPro-Demi', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 1.2em;
