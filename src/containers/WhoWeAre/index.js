@@ -19,6 +19,7 @@ class WhoWeAre extends Component {
             <Tab><div style={styles.avatarWrapper}><img src='assets/img/pic_lucas.png' style={styles.avatar} /></div></Tab>
           </TabList>
           <TabPanel>
+            <Name>Dimitrios Kavvathas</Name>
             <Subtitle>Chief Investment Officer at Harmony Advisors Limited</Subtitle>
             <Overview>
               Dimitrios joined Goldman Sachs in London in 2001 and moved to Hong Kong in 2009. He was promoted to Managing Director in 2005 and was invited to join the partnership in 2008. He served in various senior positions during his career, including co-Head of Asia Pacific Securities Division Distribution (FICC, Equities, Corporate Origination Sales & Structuring), serving on the Asia Pacific Securities Division Operating Committee, the Asia Pacific Risk Committee, the Global Firmwide New Activity and Asset & Liability Committees as well as the Goldman Sachs (Asia) L.L.C. Board of Directors. He started his career in Fixed Income and held positions in interest rates, FX, commodities, credit derivatives, structured finance, equity derivatives, high yield and convertible bonds, as well as covering and interacting with all clients groups, including asset managers, financial institutions, pension funds, corporates, sovereigns and HNWIs.<br /><br />
@@ -28,6 +29,7 @@ class WhoWeAre extends Component {
             </Overview>
           </TabPanel>
           <TabPanel>
+            <Name>Lauren Cohen</Name>
             <Subtitle>Professor Lauren H. Cohen <br /> L.E. Simmons Professor of Business Administration</Subtitle>
             <Overview>
               Lauren Cohen is the L.E. Simmons Professor in the Finance & Entrepreneurial Management Unitsat Harvard Business School and a Research Associate at the National Bureau of EconomicResearch. He is an Editor of the Review of Financial Studies, along with being a past Editor ofManagement Science, and serving on the editorial board of the Review of Asset Pricing Studies. Heteaches in the MBA Program, Executive Education Program, Doctoral Program, and Special Custom Programs at the Harvard Business School.<br /><br />
@@ -38,6 +40,7 @@ class WhoWeAre extends Component {
             </Overview>
           </TabPanel>
           <TabPanel>
+            <Name>Chris Malloy</Name>
             <Subtitle>Professor Christopher J. Malloy <br /> Sylvan C. Coleman Chaired Professor of Financial Management</Subtitle>
             <Overview>
               Christopher Malloy is the Sylvan C. Coleman Chaired Professor in the Finance Unit at HarvardBusiness School, and a Faculty Research Fellow at the National Bureau of Economic Research. Prior to joiningHBS in 2007, Professor Malloy was an Assistant Professor in the Finance Department at London Business School,where he was on faculty from 2003-2007. Professor Malloy currently teaches the second semester investment strategies and stock pitching courses at HBS, and has previously taught courses in behavioral finance, corporatefinance, and equity investment management.<br /><br />
@@ -46,6 +49,7 @@ class WhoWeAre extends Component {
             </Overview>
           </TabPanel>
           <TabPanel>
+            <Name>Kimon Gomozias</Name>
             <Overview>
               Kimon started his career at Goldman Sachs in 2003 before moving to ECM, a boutique fixed income asset manager, in 2004 to work on the development of structured fixed income funds.<br /><br />
               Kimon joined the Standard & Poor’s Structured Finance group in 2005 as a Senior Quantitative Analyst where he led the development of the rating methodology and monitoring process for the hybrid synthetic CDO business that involves the securitization and risk sharing of cross-asset (Equity, Credit, Commodity, FX and Rates) derivative exposures.<br /><br />
@@ -55,6 +59,7 @@ class WhoWeAre extends Component {
             </Overview>
           </TabPanel>
           <TabPanel>
+            <Name>Lucas Gaylord</Name>
             <Overview>
               Lucas Gaylord is a Global Business and Computer Science double major at Hong Kong University of Science and Technology (HKUST) from the United States. His studies and extracurricular activities have been fully funded by several prestigious scholarships, including the Mr & Mrs Liu Sing Cheong and Wong Po Yuk Scholarship (SBM Global Leadership and Community Engagement), the HKUST Diverse Initiative Scholarship, and the Mainland Experience Scheme Award for Chinese studies. After 4 rigorous years, which often required Lucas to create his own classes and design academic programs where they didn’t previously exist, he will be the first student of HKUST to successfully achieve the dual degree outlined above. <br /><br />
               Lucas is an experienced entrepreneur, a motivated student, a polyglot, and an avid traveller. He has lived in 4 different countries, and speaks English, German, and Arabic (plus a moderate amount of Mandarin Chinese).
@@ -74,6 +79,15 @@ const Overview = styled.h1`
   letter-spacing: .025em;
   padding: 10px;
 `
+const Name = styled.h1`
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: .025em;
+  padding: 1.5em;
+`
+
 const Subtitle = styled.h1`
   // margin: 0;
   font-family: 'AvenirNextLTPro-Demi', 'Helvetica Neue', Helvetica, Arial, sans-serif;
