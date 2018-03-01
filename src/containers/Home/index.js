@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
 import { Content } from '../../components/General'
 import { Title, H1, H2, Span } from '../../components'
 
@@ -6,6 +7,7 @@ class Home extends Component {
   render () {
     return (
       <Content>
+        <Link href='http://54.161.220.200'>Home Page</Link>
         <Title> Introduction </Title>
         <H1>Quote:<Span italic>“Imperfect as our financial system is, I still find myself admiring it for what it does and imagining how much more impressive it can be in the future.” Finance and the Good Society, by Robert Shiller.”</Span></H1><br /><br />
         <H1> Risk sharing is the basic function of finance. Meanwhile, the broad adoption of cryptocurrencies is hampered by the extreme volatility of cryptocurrency prices.</H1>
@@ -62,5 +64,16 @@ class Home extends Component {
     )
   }
 }
+
+const Link = styled.a`
+  position: absolute;
+  right: 10;
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.8em;
+  letter-spacing: .025em;
+  padding: 10px;
+`
 
 export default Home
