@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Content } from '../../components/General'
-import { Title } from '../../components'
+import { PageTitle } from '../../components'
 import styled from 'styled-components'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
@@ -9,7 +9,7 @@ class WhoWeAre extends Component {
   render () {
     return (
       <Content>
-        <Title> Who we are </Title>
+        <PageTitle> Who we are </PageTitle>
         <Tabs>
           <TabList>
             <Tab><div style={styles.avatarWrapper}><img src='assets/img/pic_dimitrios.png' style={styles.avatar} /></div></Tab>

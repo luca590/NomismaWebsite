@@ -1,14 +1,40 @@
 import styled, { css } from 'styled-components'
 
-export const Title = styled.h1`
+export const TGTitle = styled.h1`
   margin: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 3em;
+  font-family: 'AvenirNextLTPro-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 3.5em;
   letter-spacing: .025em;
   padding-top: 30px;
   padding-bottom: 30px;
   ${props => props.italic && css`
+    font-style: italic;
+  `}
+`
+
+export const TGDescription = styled.h1`
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.5em;
+  letter-spacing: .025em;
+  padding: 10px;
+  ${props => props.italic && css`
+    font-size: 1.3em;
+    font-style: italic;
+  `}
+`
+
+export const TGDetail = styled.h1`
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.2em;
+  letter-spacing: .025em;
+  padding: 10px;
+  ${props => props.italic && css`
+    font-size: 1.3em;
     font-style: italic;
   `}
 `
