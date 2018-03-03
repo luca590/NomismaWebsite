@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
 import { Content, TGTitle, TGDescription, TGProfileList } from '../../components'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
@@ -8,7 +9,7 @@ class WhoWeAre extends Component {
     return (
       <Content>
         <TGTitle> World leaders in <br /> finance deliver a <br /> new coin </TGTitle>
-        <div style={styles.content}>
+        {/* <div style={styles.content}>
           <div style={styles.description}>
             <TGDescription>
               World leaders in both institutional and academic <br /> finance and economics with a passion for <br /> entrepreneurship and financial technology (fintech). <br /> We Understand ramifications of blockchain. <br /> Equipped with ability to execute on ideas .
@@ -23,8 +24,8 @@ class WhoWeAre extends Component {
               Lucas Gaylord <br />
             </TGProfileList>
           </div>
-        </div>
-        {/* <Tabs>
+        </div> */}
+        <Tabs>
           <TabList>
             <Tab><div style={styles.avatarWrapper}><img src='assets/img/pic_dimitrios.png' style={styles.avatar} /></div></Tab>
             <Tab><div style={styles.avatarWrapper}><img src='assets/img/pic_lauren.png' style={styles.avatar} /></div></Tab>
@@ -64,6 +65,7 @@ class WhoWeAre extends Component {
           </TabPanel>
           <TabPanel>
             <Name>Kimon Gomozias</Name>
+            <Subtitle>Portfolio Construction, Wealth & Investments, Barclays UK</Subtitle>
             <Overview>
               Kimon started his career at Goldman Sachs in 2003 before moving to ECM, a boutique fixed income asset manager, in 2004 to work on the development of structured fixed income funds.<br /><br />
               Kimon joined the Standard & Poor’s Structured Finance group in 2005 as a Senior Quantitative Analyst where he led the development of the rating methodology and monitoring process for the hybrid synthetic CDO business that involves the securitization and risk sharing of cross-asset (Equity, Credit, Commodity, FX and Rates) derivative exposures.<br /><br />
@@ -74,12 +76,13 @@ class WhoWeAre extends Component {
           </TabPanel>
           <TabPanel>
             <Name>Lucas Gaylord</Name>
+            <Subtitle>Global Business and Computer Science double major at Hong Kong University of Science and Technology (HKUST)</Subtitle>
             <Overview>
-              Lucas Gaylord is a Global Business and Computer Science double major at Hong Kong University of Science and Technology (HKUST) from the United States. His studies and extracurricular activities have been fully funded by several prestigious scholarships, including the Mr & Mrs Liu Sing Cheong and Wong Po Yuk Scholarship (SBM Global Leadership and Community Engagement), the HKUST Diverse Initiative Scholarship, and the Mainland Experience Scheme Award for Chinese studies. After 4 rigorous years, which often required Lucas to create his own classes and design academic programs where they didn’t previously exist, he will be the first student of HKUST to successfully achieve the dual degree outlined above. <br /><br />
-              Lucas is an experienced entrepreneur, a motivated student, a polyglot, and an avid traveller. He has lived in 4 different countries, and speaks English, German, and Arabic (plus a moderate amount of Mandarin Chinese).
+              Lucas Gaylord is a Global Business and Computer Science double major at Hong Kong University of Science and Technology (HKUST) from the United States. His studies and extracurricular activities have been fully funded by several prestigious scholarships, including the Mr & Mrs Liu Sing Cheong and Wong Po Yuk Scholarship (SBM Global Leadership and Community Engagement), the HKUST Diverse Initiative Scholarship, and the Mainland Experience Scheme Award for Chinese studies. After 4 rigorous years, during which he’s taken PhD and MBA classes in addition to creating his own, he will be the first student of HKUST to successfully achieve the dual degree outlined above.<br /><br />
+              Lucas is an entrepreneur, a technologist, a polyglot, and an avid traveller. He has lived on 4 continents, and speaks fluent English, German, and Moroccan Arabic (plus a moderate amount of Mandarin Chinese from a summer at Peking University). He has worked with and co-founded a variety of Hong Kong based technology startups and social enterprises, hiring and leading teams working both on in software development and business administration. He has full-stack developer, project manager, and CTO experience. Lucas is primarily concerned with Ethereum, high-dimensional statistics, and deep learning having conducted research and developed new software in all three domains; he is also an active member of the Ethereum and Elixir communities in Hong Kong and Singapore.
             </Overview>
           </TabPanel>
-        </Tabs> */}
+        </Tabs>
       </Content>
     )
   }
@@ -95,7 +98,53 @@ const styles = {
   },
   profileList: {
     flex: 2
+  },
+  card: {
+    margin: 10
+  },
+  avatarWrapper: {
+    width: 100,
+    height: 100,
+    borderRadius: 100,
+    overflow: 'hidden'
+  },
+  avatar: {
+    width: '100%',
+    resizeMode: 'contain',
+    backgroundSize: 'cover'
+  },
+  title: {
+    fontSize: 25,
+    padding: 20
+  },
+  subtitle: {
+    fontSize: 20
   }
 }
+
+const Overview = styled.h1`
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.2em;
+  letter-spacing: .025em;
+  padding: 10px;
+`
+const Name = styled.h1`
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: .025em;
+  padding: 1.5em;
+`
+
+const Subtitle = styled.h1`
+  font-family: 'AvenirNextLTPro-Demi', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.2em;
+  letter-spacing: .025em;
+  padding: 10px;
+`
 
 export default WhoWeAre
