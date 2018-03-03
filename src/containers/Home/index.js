@@ -108,6 +108,39 @@ class Home extends Component {
             </TGDetail>
           </div>
         </div>
+
+        <TGTitle> The Creation of the Nomisma Stablecoin </TGTitle>
+        <div style={styles.content}>
+          <div style={styles.description}>
+            <TGDescription>
+              What is money?
+            </TGDescription>
+          </div>
+          <div style={styles.detail}>
+            <TGDetail>
+            Money is a liability created by the of cial sector and backed by its tax raising capacity.The best that a cryptocurrency can hope for in its “money-as-asset” generating function is to isolate the “user-implied” safe component of each coin as well as the “safe component” + “crypto universe correlated crash risk” of a perfectly diversi ed coin portfolio. How does one ensure the stability of a cryptocoin versus a designated  at currency? <br /><br/>
+            We are not providing an accounting algorithm that generates or destroys coins so as to maintain parity with  at. <br /><br/>
+            A coin-speci c stablecoin is de ned as the downside strike price for the short put on the underlying that implies an interest rate equivalent to the designated  at currency.This self-reconstitutes based on oracles’ signals so as to maintain  at currency claim equivalence. <br />
+            There is no arti cial limited supply; it is embedded via the supply constraints of each underlying, but translates each coin’s stability, user perception of future returns and relative desirability into a market determined  at equivalence. Some coins may be able to support stablecoin minting, some not, and some may be able to do so only for certain tenors. <br /><br/>
+            Our structuring platform, by offering the ability for the user community to independently, transparently converge towards a solution, will allow the creation of crypto-backed privately generated “safe assets” in a world which suffers from a shortage of such assets. <br /><br/>
+            </TGDetail>
+          </div>
+        </div>
+        <div style={styles.content}>
+          <div style={styles.description}>
+            <TGDescription>
+              Conclusion
+            </TGDescription>
+          </div>
+          <div style={styles.detail}>
+            <TGDetail>
+            Nomisma is a new platform that promotes system-wide risk sharing and cash pro le/payoff tailoring according to risk tolerance and cash  ow preferences. Our solution increases the appeal of blockchain investments to the average investor, both retail and institutional.
+            As added bene ts, the platform will introduce: a) a robust, fungible, and transparent Nomisma Stablecoin, exhibiting all the characteristics of optimal privately produced money; b) a smart contract based clearinghouse; c) a crowdsourced/market-based creditworthiness assignment engine, and d) a mechanism to match managers with alpha- generating capacity to those looking to hedge or enter the crypto space at varying levels of risk tolerance. <br /><br />
+            More generally, Nomisma is a comprehensive intermediation platform that will help incentivize investment into the cryptocurrency space and spawn the next generation of innovation on the blockchain.
+            </TGDetail>
+          </div>
+        </div>
+        
       </Content>
     )
   }
