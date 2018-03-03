@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-import { Content } from '../../components/General'
-import { PageTitle, H1 } from '../../components'
+import { Content, TGTitle, H1 } from '../../components'
 import styled from 'styled-components'
 
 class GetInTouch extends Component {
   render () {
     return (
       <Content>
-        <PageTitle> Get In Touch </PageTitle>
+        <TGTitle> Get In Touch </TGTitle>
         <H1>Email: nomismafoundation@gmail.com</H1>
         <Link href='https://join.slack.com/t/nomismaworkspace/shared_invite/enQtMzIxNjk5ODExNDc1LWUwOGI2ODk4NzJiMjUzYWRlYjc1MTgxMGE4MmY3NWM2NTJkNDEwNjU4ODU4ZjI4N2YwOTVhNDg4Y2NjOTE0NTI' target='_blank'>Slack link </Link>
       </Content>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Content, TGTitle, TGDescription, TGProfileList } from '../../components'
-import styled from 'styled-components'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Content, TGTitle, TGDescription, TGDetail } from '../../components'
+import { Content, TGTitle, TGDetail } from '../../components'
 
 class HowItWorks extends Component {
   goToNext () {
