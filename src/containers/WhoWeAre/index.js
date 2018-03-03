@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Content } from '../../components/General'
-import { PageTitle } from '../../components'
+import { TGTitle, TGDescription, TGProfileList } from '../../components'
 import styled from 'styled-components'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
@@ -9,8 +9,24 @@ class WhoWeAre extends Component {
   render () {
     return (
       <Content>
-        <PageTitle> Who we are </PageTitle>
-        <Tabs>
+        <TGTitle> World leaders in <br /> finance deliver a <br /> new coin </TGTitle>
+        <div style={styles.content}>
+          <div style={styles.description}>
+            <TGDescription>
+              World leaders in both institutional and academic <br /> finance and economics with a passion for <br /> entrepreneurship and financial technology (fintech). <br /> We Understand ramifications of blockchain. <br /> Equipped with ability to execute on ideas .
+            </TGDescription>
+          </div>
+          <div style={styles.profileList}>
+            <TGProfileList>
+              Dimitrios Kavvathas <br />
+              Lauren Cohen <br />
+              Chris Malloy <br />
+              Kimon Gomozias <br />
+              Lucas Gaylord <br />
+            </TGProfileList>
+          </div>
+        </div>
+        {/* <Tabs>
           <TabList>
             <Tab><div style={styles.avatarWrapper}><img src='assets/img/pic_dimitrios.png' style={styles.avatar} /></div></Tab>
             <Tab><div style={styles.avatarWrapper}><img src='assets/img/pic_lauren.png' style={styles.avatar} /></div></Tab>
@@ -65,58 +81,22 @@ class WhoWeAre extends Component {
               Lucas is an experienced entrepreneur, a motivated student, a polyglot, and an avid traveller. He has lived in 4 different countries, and speaks English, German, and Arabic (plus a moderate amount of Mandarin Chinese).
             </Overview>
           </TabPanel>
-        </Tabs>
+        </Tabs> */}
       </Content>
     )
   }
 }
 
-const Overview = styled.h1`
-  margin: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 1.2em;
-  letter-spacing: .025em;
-  padding: 10px;
-`
-const Name = styled.h1`
-  margin: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  font-size: 1em;
-  letter-spacing: .025em;
-  padding: 1.5em;
-`
-
-const Subtitle = styled.h1`
-  font-family: 'AvenirNextLTPro-Demi', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 1.2em;
-  letter-spacing: .025em;
-  padding: 10px;
-`
-
 const styles = {
-  card: {
-    margin: 10
+  content: {
+    flex: 1,
+    flexDirection: 'column'
   },
-  avatarWrapper: {
-    width: 100,
-    height: 100,
-    borderRadius: 100,
-    overflow: 'hidden'
+  description: {
+    flex: 1
   },
-  avatar: {
-    width: '100%',
-    resizeMode: 'contain',
-    backgroundSize: 'cover'
-  },
-  title: {
-    fontSize: 25,
-    padding: 20
-  },
-  subtitle: {
-    fontSize: 20
+  profileList: {
+    flex: 2
   }
 }
 

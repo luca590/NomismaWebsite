@@ -39,6 +39,19 @@ export const TGDetail = styled.h1`
   `}
 `
 
+export const TGProfileList = styled.h1`
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.3em;
+  letter-spacing: .025em;
+  padding: 10px;
+  ${props => props.italic && css`
+    font-size: 1.3em;
+    font-style: italic;
+  `}
+`
+
 export const P = styled.p`
     margin: 0 0 1em;
     font-size: 1em;
