@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --host localhost --history-api-fallback --open  --content-base src",
     "build": "webpack -p",
-    "start": "node app.js",
+    "start": "forever start app.js",
+    "stop": "forever stop app.js",
     "test": "standard --parser babel-eslint --verbose | snazzy | jest"
   },
   "jest": {
@@ -27,6 +28,7 @@
     "css-loader": "^0.28.10",
     "express": "^4.16.2",
     "font-awesome": "^4.7.0",
+    "forever-monitor": "^1.7.1",
     "formidable": "^1.1.1",
     "history": "^4.7.2",
     "immutable": "^3.8.2",
