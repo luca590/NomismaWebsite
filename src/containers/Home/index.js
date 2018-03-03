@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Content } from '../../components/General'
-import { TGTitle, TGDescription, TGDetail } from '../../components'
+import { Content, TGTitle, TGDescription, TGDetail } from '../../components'
 
 class Home extends Component {
   render () {
