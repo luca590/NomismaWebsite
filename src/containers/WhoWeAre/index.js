@@ -31,7 +31,7 @@ class WhoWeAre extends Component {
             <Tab><div style={styles.avatarWrapper}><img src='assets/img/pic_lauren.png' style={styles.avatar} /></div></Tab>
             <Tab><div style={styles.avatarWrapper}><img src='assets/img/pic_chris.png' style={styles.avatar} /></div></Tab>
             <Tab><div style={styles.avatarWrapper}><img src='assets/img/pic_kimon.jpg' style={styles.avatar} /></div></Tab>
-            <Tab><div style={styles.avatarWrapper}><img src='assets/img/pic_lucas.png' style={styles.avatar} /></div></Tab>
+            <Tab><div style={styles.avatarWrapper}><img src='assets/img/pic_lucas.jpg' style={styles.avatar} /></div></Tab>
           </TabList>
           <TabPanel>
             <Name>Dimitrios Kavvathas</Name>

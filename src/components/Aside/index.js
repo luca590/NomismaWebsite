@@ -6,12 +6,12 @@ const Aside = () => {
   return (
     <AsideContainer>
       <Ul>
-        <Li><NavLink to='/' activeClassName='active'>01 INTRODUCTION</NavLink></Li>
-        <Li><NavLink to='/whoWeAre' activeClassName='active'>02 EXPERTISE</NavLink></Li>
-        <Li><NavLink to='/whatWeDo' activeClassName='active'>03 WHAT SETS US APART</NavLink></Li>
-        <Li><NavLink to='/howItWorks' activeClassName='active'>04 HOW IT WORKS</NavLink></Li>
-        <Li><NavLink to='/whitePaper' activeClassName='active'>05 WHITE PAPER</NavLink></Li>
-        <Li><NavLink to='/getInTouch' activeClassName='active'>Get in touch</NavLink></Li>
+        <Li><NavLink to='/' activeClassName='active'>INTRODUCTION</NavLink></Li>
+        <Li><NavLink to='/whoWeAre' activeClassName='active'>WHO WE ARE</NavLink></Li>
+        <Li><NavLink to='/whatWeDo' activeClassName='active'>WHAT WE DO</NavLink></Li>
+        <Li><NavLink to='/howItWorks' activeClassName='active'>HOW IT WORKS</NavLink></Li>
+        <Li><NavLink to='/whitePaper' activeClassName='active'>WHITE PAPER</NavLink></Li>
+        <Li><NavLink to='/getInTouch' activeClassName='active'>GET IN TOUCH</NavLink></Li>
       </Ul>
     </AsideContainer>
   )
