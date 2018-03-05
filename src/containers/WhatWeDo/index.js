@@ -9,7 +9,7 @@ class WhatWeDo extends Component {
         <div style={styles.content}>
           <div style={styles.description}>
             <TGDescription>
-            Risk sharing and diversi cation are core concepts in  nance. A fundamental application of  nance theory is the creation of tools to customize desired cash  ow/investment pro les in line with the risk tolerances of investors.
+            Risk sharing and diversification are core concepts in finance. A fundamental application of finance theory is the creation of tools to customize desired cash flow/investment pro les in line with the risk tolerances of investors.
             </TGDescription>
           </div>
           <div style={styles.detail}>
