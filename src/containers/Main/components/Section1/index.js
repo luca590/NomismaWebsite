@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
-import { Content, TGTitle, TGDescription, TGNote, TGDetail } from '../../../../components'
+import { Content, TGTitle, TGDescription, TGNote, TGMenuItem, TGDetail, Aside } from '../../../../components'
 
 class Section1 extends Component {
   render () {
     return (
       <Content url='/assets/img/background_images.jpg'>
+        <Aside>
+          <TGMenuItem> Nomisma </TGMenuItem>
+        </Aside>
         <TGTitle> Risk sharing revolutionizes <br /> the cryptocurrency space </TGTitle>
         <div style={styles.content}>
           <div style={styles.description}>

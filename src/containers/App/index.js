@@ -14,7 +14,6 @@ class App extends Component {
       <MuiThemeProvider>
         <Fragment>
           <Header />
-          <Aside />
           <Switch>
             <Route exact path='/' component={Main} />
           </Switch>
