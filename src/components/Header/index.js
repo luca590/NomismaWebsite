@@ -23,6 +23,7 @@ const Content = styled.div`
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: 2rem;
+  background-image: url('/assets/img/white-icon');
 `
 
 export default Header
