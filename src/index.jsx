@@ -30,15 +30,51 @@ render((
 injectGlobal`
   @font-face {
     font-family: Stag-Book;
-    src: url('/assets/fonts/Stag-Book.otf') format('otf');
+    src: url('/assets/fonts/Stag-Book.otf') format('truetype');
   }
   @font-face {
     font-family: Stag-Light;
-    src: url('/assets/fonts/Stag-Light.otf') format('otf');
+    src: url('/assets/fonts/Stag-Light.otf') format('truetype');
   }
   @font-face {
     font-family: Stag-Sans-Light;
-    src: url('/assets/fonts/Stag-Sans-Light.otf') format('otf');
+    src: url('/assets/fonts/Stag-Sans-Light.otf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'AvenirNextLTPro-Bold';
+    src: url('/assets/fonts/35C055_0_0.eot');
+    src: url('/assets/fonts/35C055_0_0.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/35C055_0_0.woff2') format('woff2'),
+        url('/assets/fonts/35C055_0_0.woff') format('woff'),
+        url('/assets/fonts/35C055_0_0.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'AvenirNextLTPro-Demi';
+    src: url('/assets/fonts/35C055_1_0.eot');
+    src: url('/assets/fonts/35C055_1_0.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/35C055_1_0.woff2') format('woff2'),
+        url('/assets/fonts/35C055_1_0.woff') format('woff'),
+        url('/assets/fonts/35C055_1_0.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'AvenirNextLTPro-Regular';
+    src: url('/assets/fonts/35C055_3_0.eot');
+    src: url('/assets/fonts/35C055_3_0.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/35C055_3_0.woff2') format('woff2'),
+        url('/assets/fonts/35C055_3_0.woff') format('woff'),
+        url('/assets/fonts/35C055_3_0.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'AvenirNextLTPro-Italic';
+    src: url('/assets/fonts/35C055_2_0.eot');
+    src: url('/assets/fonts/35C055_2_0.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/35C055_2_0.woff2') format('woff2'),
+        url('/assets/fonts/35C055_2_0.woff') format('woff'),
+        url('/assets/fonts/35C055_2_0.ttf') format('truetype');
   }
 
   *, *:before, *:after {

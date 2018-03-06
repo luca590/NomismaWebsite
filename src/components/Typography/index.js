@@ -3,51 +3,35 @@ import styled, { css } from 'styled-components'
 export const TGTitle = styled.h1`
   margin: 0;
   font-family: 'Stag-Book';
-  font-weight: 200;
-  font-size: 3.5em;
-  letter-spacing: .025em;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  font-size: 54pt;
   ${props => props.italic && css`
     font-style: italic;
   `}
 `
 
-export const TGDescription = styled.h1`
+export const TGDescription = styled.h2`
   margin: 0;
   font-family: 'Stag-Sans-Light';
-  font-weight: normal;
-  font-size: 1.5em;
-  letter-spacing: .025em;
-  padding: 10px;
+  font-size: 20pt;
   ${props => props.italic && css`
-    font-size: 1.3em;
     font-style: italic;
   `}
 `
 
-export const TGDetail = styled.h1`
+export const TGDetail = styled.h3`
   margin: 0;
   font-family: 'Stag-Light';
-  font-weight: normal;
-  font-size: 1.2em;
-  letter-spacing: .025em;
-  padding: 10px;
+  font-size: 14pt;
   ${props => props.italic && css`
-    font-size: 1.3em;
     font-style: italic;
   `}
 `
 
-export const TGProfileList = styled.h1`
+export const TGMenuItem = styled.h1`
   margin: 0;
-  font-family: 'Stag-Book';
-  font-weight: normal;
-  font-size: 1.3em;
-  letter-spacing: .025em;
-  padding: 10px;
+  font-family: 'Stag-Light';
+  font-size: 14.4pt;
   ${props => props.italic && css`
-    font-size: 1.3em;
     font-style: italic;
   `}
 `
