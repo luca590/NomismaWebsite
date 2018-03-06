@@ -6,6 +6,8 @@ class Main extends Component {
     return (
       <div>
         <Section1 />
+        <Section1 />
+        <Section1 />
       </div>
     )
   }

@@ -14,6 +14,7 @@ class Header extends React.Component {
 }
 
 const Wrapper = styled.header`
+  position: absolute;
   margin-right: 25vw;
 `
 const Content = styled.div`
@@ -22,6 +23,7 @@ const Content = styled.div`
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: 2rem;
+  background-image: url('/assets/img/white-icon');
 `
 
 export default Header
