@@ -12,8 +12,6 @@ import App from './containers/App'
 import 'sanitize.css/sanitize.css'
 import 'font-awesome/css/font-awesome.min.css'
 
-const TotIcons = '/assets/fonts/tot-icons.ttf'
-
 const history = createBrowserHistory()
 const { store, persistor } = configureStore()
 
@@ -31,44 +29,16 @@ render((
 // Should really be reserved only for non-components (i.e, body/html)
 injectGlobal`
   @font-face {
-    font-family: TotIcons;
-    src: url(${TotIcons}) format('truetype');
+    font-family: Stag-Book;
+    src: url('/assets/fonts/Stag-Book.otf') format('otf');
   }
-
   @font-face {
-    font-family: 'AvenirNextLTPro-Bold';
-    src: url('/assets/fonts/35C055_0_0.eot');
-    src: url('/assets/fonts/35C055_0_0.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/35C055_0_0.woff2') format('woff2'),
-        url('/assets/fonts/35C055_0_0.woff') format('woff'),
-        url('/assets/fonts/35C055_0_0.ttf') format('truetype');
+    font-family: Stag-Light;
+    src: url('/assets/fonts/Stag-Light.otf') format('otf');
   }
-
   @font-face {
-    font-family: 'AvenirNextLTPro-Demi';
-    src: url('/assets/fonts/35C055_1_0.eot');
-    src: url('/assets/fonts/35C055_1_0.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/35C055_1_0.woff2') format('woff2'),
-        url('/assets/fonts/35C055_1_0.woff') format('woff'),
-        url('/assets/fonts/35C055_1_0.ttf') format('truetype');
-  }
-
-  @font-face {
-    font-family: 'AvenirNextLTPro-Regular';
-    src: url('/assets/fonts/35C055_3_0.eot');
-    src: url('/assets/fonts/35C055_3_0.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/35C055_3_0.woff2') format('woff2'),
-        url('/assets/fonts/35C055_3_0.woff') format('woff'),
-        url('/assets/fonts/35C055_3_0.ttf') format('truetype');
-  }
-
-  @font-face {
-    font-family: 'AvenirNextLTPro-Italic';
-    src: url('/assets/fonts/35C055_2_0.eot');
-    src: url('/assets/fonts/35C055_2_0.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/35C055_2_0.woff2') format('woff2'),
-        url('/assets/fonts/35C055_2_0.woff') format('woff'),
-        url('/assets/fonts/35C055_2_0.ttf') format('truetype');
+    font-family: Stag-Sans-Light;
+    src: url('/assets/fonts/Stag-Sans-Light.otf') format('otf');
   }
 
   *, *:before, *:after {
@@ -84,7 +54,7 @@ injectGlobal`
   }
 
   body {
-    font-family: 'AvenirNextLTPro-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Stag-Book';
     font-size: 14px;
     line-height: 1;
     font-weight: 400;

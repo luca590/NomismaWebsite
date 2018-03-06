@@ -65,7 +65,7 @@ const ButtonItem = styled.button`
     border-radius: 2px;
     user-select: none;
     appearance: none;
-    font-family: 'proxima-nova', 'Helvetica Neue', helvetica, sans-serif;
+    font-family: 'Stag-Book';
     font-weight: 600;
     font-size: .85em;
     line-height: 1.5;

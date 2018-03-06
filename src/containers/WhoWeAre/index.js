@@ -124,7 +124,7 @@ const styles = {
 
 const Overview = styled.h1`
   margin: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Stag-Book';
   font-weight: normal;
   font-size: 1.2em;
   letter-spacing: .025em;
@@ -132,7 +132,7 @@ const Overview = styled.h1`
 `
 const Name = styled.h1`
   margin: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Stag-Book';
   font-weight: bold;
   font-size: 1em;
   letter-spacing: .025em;
@@ -140,7 +140,7 @@ const Name = styled.h1`
 `
 
 const Subtitle = styled.h1`
-  font-family: 'AvenirNextLTPro-Demi', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Stag-Book';
   font-weight: normal;
   font-size: 1.2em;
   letter-spacing: .025em;

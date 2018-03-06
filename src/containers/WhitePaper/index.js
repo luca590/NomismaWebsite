@@ -24,7 +24,7 @@ class WhitePaper extends Component {
 
 const Link = styled.a`
   margin: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Stag-Book';
   font-weight: normal;
   font-size: 1.8em;
   letter-spacing: .025em;

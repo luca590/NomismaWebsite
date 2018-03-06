@@ -43,7 +43,7 @@ export default class ProfileCard extends React.Component {
 
 const Overview = styled.h1`
   margin: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Stag-Book';
   font-weight: normal;
   font-size: 1.2em;
   letter-spacing: .025em;

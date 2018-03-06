@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 
 export const TGTitle = styled.h1`
   margin: 0;
-  font-family: 'AvenirNextLTPro-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Stag-Book';
   font-weight: 200;
   font-size: 3.5em;
   letter-spacing: .025em;
@@ -15,7 +15,7 @@ export const TGTitle = styled.h1`
 
 export const TGDescription = styled.h1`
   margin: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Stag-Sans-Light';
   font-weight: normal;
   font-size: 1.5em;
   letter-spacing: .025em;
@@ -28,7 +28,7 @@ export const TGDescription = styled.h1`
 
 export const TGDetail = styled.h1`
   margin: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Stag-Light';
   font-weight: normal;
   font-size: 1.2em;
   letter-spacing: .025em;
@@ -41,7 +41,7 @@ export const TGDetail = styled.h1`
 
 export const TGProfileList = styled.h1`
   margin: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Stag-Book';
   font-weight: normal;
   font-size: 1.3em;
   letter-spacing: .025em;
@@ -61,20 +61,20 @@ export const P = styled.p`
     font-style: italic;
   `}
   ${props => props.small && css`
-    font-family: 'AvenirNextLTPro-Demi', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Stag-Book';
     font-size: .75em;
     line-height: 1.4;
   `}
 
   ${props => props.hero && css`
-    font-family: 'AvenirNextLTPro-Demi', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Stag-Book';
     font-size: 1.25em;
   `}
 `
 
 export const H1 = styled.h1`
     margin: 0;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Stag-Book';
     font-weight: normal;
     font-size: 1.5em;
     letter-spacing: .025em;
@@ -87,7 +87,7 @@ export const H1 = styled.h1`
 export const H2 = styled.h2`
     margin: 0 1em 1em 0em;
     margin-left: 1em;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Stag-Book';
     font-weight: normal;
     font-size: 1.3em;
   ${props => props.italic && css`
@@ -97,7 +97,7 @@ export const H2 = styled.h2`
 
 export const H3 = styled.h3`
     margin: 0 0 2em;
-    font-family: 'AvenirNextLTPro-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Stag-Book';
     font-size: 1.5em;
   ${props => props.italic && css`
     font-style: italic;
@@ -106,7 +106,7 @@ export const H3 = styled.h3`
 
 export const H4 = styled.h4`
     margin: 1.5em 0 1em;
-    font-family: 'AvenirNextLTPro-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Stag-Book';
     font-weight: normal;
     font-size: .75em;
     letter-spacing: .1875em;
