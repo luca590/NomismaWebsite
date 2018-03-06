@@ -19,8 +19,9 @@ const Aside = () => {
 
 const AsideContainer = styled.div`
   position: absolute;
+  top: 300px;
   padding: 1.5em 1em;
-  width: 18rem;
+  width: 250px;
   background: white;
   box-shadow: 0 0 20px 0 black;
   border-radius: 8px;

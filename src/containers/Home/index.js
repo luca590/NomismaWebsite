@@ -1,25 +1,19 @@
 import React, { Component } from 'react'
-import { Content, TGTitle, TGDescription, TGDetail } from '../../components'
+import { Content, TGTitle, TGDescription, TGNote, TGDetail } from '../../components'
 
 class Home extends Component {
   render () {
     return (
       <Content>
-        {/* <Button
-          label='Prototype'
-          transitionLabel='Home Page'
-          fancy pill transition lg
-          onClick={() => window.open('http://54.161.220.200', '_self')}
-        /> */}
         <TGTitle> Risk sharing revolutionizes <br /> the cryptocurrency space </TGTitle>
         <div style={styles.content}>
           <div style={styles.description}>
             <TGDescription>
               Imperfect as our financial system is, I still find myself admiring it for what it does and imagining how much more impressive it can be in the future.”
             </TGDescription>
-            <TGDescription>
+            <TGNote>
               Finance and the Good Society, Robert Shiller.
-            </TGDescription>
+            </TGNote>
           </div>
           <div style={styles.detail}>
             <TGDetail>
@@ -29,7 +23,7 @@ class Home extends Component {
           </div>
         </div>
 
-        <TGTitle> The problem </TGTitle>
+        {/* <TGTitle> The problem </TGTitle>
         <div style={styles.content}>
           <div style={styles.detail}>
             <TGDetail>
@@ -138,7 +132,7 @@ class Home extends Component {
               More generally, Nomisma is a comprehensive intermediation platform that will help incentivize investment into the cryptocurrency space and spawn the next generation of innovation on the blockchain.
             </TGDetail>
           </div>
-        </div>
+        </div> */}
       </Content>
     )
   }

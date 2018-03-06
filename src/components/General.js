@@ -4,9 +4,9 @@ export const Wrapper = styled.div`
   padding: 2rem;
 `
 
-export const Content = styled.div`
-  margin: 0rem 2rem 2rem 20rem;
-`
+// export const Content = styled.div`
+//   margin: 0rem 2rem 2rem 20rem;
+// `
 
 export const Form = styled.div`
   margin-top: 2rem;
