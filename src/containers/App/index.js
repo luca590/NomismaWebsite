@@ -6,7 +6,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import { Main } from '../'
 
 // Components
-import { Header, Aside, Sidebar } from '../../components'
+import { Header, Aside } from '../../components'
 
 class App extends Component {
   render () {
@@ -17,7 +17,6 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={Main} />
           </Switch>
-          <Sidebar />
         </Fragment>
       </MuiThemeProvider>
     )
