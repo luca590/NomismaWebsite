@@ -4,21 +4,15 @@ import { Content, TGTitle, TGDescription, TGNote, TGMenuItem, TGDetail, Aside } 
 class Section1 extends Component {
   render () {
     return (
-      <Content url='/assets/img/background_images.jpg'>
-        <div style={styles.mainContent}>
-          <Aside>
-            <TGMenuItem> Nomisma </TGMenuItem>
-          </Aside>
-          <TGTitle> Risk sharing revolutionizes <br /> the cryptocurrency space </TGTitle>
-          <div style={styles.content}>
-            <div style={styles.description}>
-              <TGDescription>
-                Imperfect as our financial system is, I still find myself admiring it for what it does and imagining how much more impressive it can be in the future.”
-              </TGDescription>
-              <TGNote>
-                Finance and the Good Society, Robert Shiller.
-              </TGNote>
-            </div>
+      <Content url='/assets/img/background_images2.jpg'>
+        <Aside>
+          <TGMenuItem> Nomisma </TGMenuItem>
+        </Aside>
+        <div style={styles.content}>
+          <div style={styles.title}>
+            <TGTitle> Nomisma </TGTitle>
+          </div>
+          <div style={styles.body}>
             <div style={styles.detail}>
               <TGDetail>
                 Risk sharing is a cornerstone of finance. Cryptocurrency adoption is hampered by extreme volatility in cryptocurrency prices.
@@ -35,10 +29,25 @@ class Section1 extends Component {
 const styles = {
   content: {
     flex: 1,
-    flexDirection: 'column'
+    flexDirection: 'column',
+    paddingLeft: 300,
+    paddingTop: 200,
+    paddingRight: 50
+  },
+  title: {
+    padding: 50
+  },
+  body: {
+    display: 'flex',
+    flex: 1,
+    flexDirection: 'row'
   },
   description: {
-    flex: 1
+    flex: 1,
+    paddingRight: 50
+  },
+  subTitle: {
+    paddingBottom: 20
   },
   detail: {
     flex: 2
