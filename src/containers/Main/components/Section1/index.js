@@ -58,7 +58,8 @@ const styles = {
     paddingBottom: 20
   },
   detail: {
-    flex: 2
+    flex: 2,
+    paddingRight: 200
   }
 }
 
