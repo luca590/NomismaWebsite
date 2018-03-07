@@ -1,10 +1,26 @@
 import React, { Component } from 'react'
-import { Content, TGTitle, TGDescription, TGNote, TGMenuItem, TGDetail, Aside } from '../../../../components'
+import {
+  Aside,
+  ContactLink,
+  Content,
+  InsightsLink,
+  LogoImage,
+  LogoText,
+  TGDetail,
+  TGMenuItem,
+  TGTitle,
+  TGDescription,
+  TGNote
+} from '../../../../components'
 
 class Section1 extends Component {
   render () {
     return (
       <Content url='/assets/img/background_images.jpg'>
+        <LogoImage src='/assets/img/white-icon.png' width='100' height='100' />
+        <LogoText src='/assets/img/logo.png' width='180' height='35' />
+        <ContactLink>CONTACT</ContactLink>
+        <InsightsLink>INSIGHTS</InsightsLink>
         <Aside>
           <TGMenuItem> Nomisma </TGMenuItem>
         </Aside>
@@ -58,7 +74,8 @@ const styles = {
     paddingBottom: 20
   },
   detail: {
-    flex: 2
+    flex: 2,
+    paddingRight: 200
   }
 }
 
