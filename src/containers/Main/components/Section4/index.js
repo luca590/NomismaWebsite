@@ -1,6 +1,20 @@
 import React, { Component } from 'react'
-import { Content, TGTitle, TGDescription, TGNote, TGMenuItem, TGDetail, Aside, TGProfileListItem } from '../../../../components'
+import {
+  Aside,
+  ContactLink,
+  Content,
+  InsightsLink,
+  LogoImage,
+  LogoText,
+  TGDetail,
+  TGMenuItem,
+  TGTitle,
+  TGDescription,
+  TGNote,
+  TGProfileListItem
+} from '../../../../components'
 import FontAwesome from 'react-fontawesome'
+
 class Section4 extends Component {
   constructor(props) {
     super(props)
@@ -15,6 +29,10 @@ class Section4 extends Component {
   render () {
     return (
       <Content url='/assets/img/background_images4.jpg'>
+        <LogoImage src="/assets/img/white-icon.png" width="100" height="100"></LogoImage>
+        <LogoText src="/assets/img/logo.png" width="180" height="35"></LogoText>
+        <ContactLink>CONTACT</ContactLink>
+        <InsightsLink>INSIGHTS</InsightsLink>
         <Aside>
           <TGMenuItem> Team </TGMenuItem>
         </Aside>

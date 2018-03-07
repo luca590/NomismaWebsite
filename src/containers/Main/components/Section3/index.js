@@ -1,10 +1,26 @@
 import React, { Component } from 'react'
-import { Content, TGTitle, TGDescription, TGNote, TGMenuItem, TGDetail, Aside } from '../../../../components'
+import {
+  Aside,
+  ContactLink,
+  Content,
+  InsightsLink,
+  LogoImage,
+  LogoText,
+  TGDetail,
+  TGMenuItem,
+  TGTitle,
+  TGDescription,
+  TGNote
+} from '../../../../components'
 
 class Section3 extends Component {
   render () {
     return (
       <Content url='/assets/img/background_images3.jpg'>
+        <LogoImage src="/assets/img/white-icon.png" width="100" height="100"></LogoImage>
+        <LogoText src="/assets/img/logo.png" width="180" height="35"></LogoText>
+        <ContactLink>CONTACT</ContactLink>
+        <InsightsLink>INSIGHTS</InsightsLink>
         <Aside>
           <TGMenuItem> White paper </TGMenuItem>
         </Aside>
