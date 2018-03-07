@@ -46,8 +46,20 @@ export const TGDetail = styled.h3`
 
 export const TGMenuItem = styled.h1`
   margin: 0;
+  color: white;
   font-family: 'Stag-Light';
   font-size: 14.4pt;
+  ${props => props.italic && css`
+    font-style: italic;
+  `}
+`
+
+export const TGProfileListItem = styled.h1`
+  margin: 0;
+  color: white;
+  font-family: 'Stag-Light';
+  font-size: 16pt;
+  letter-spacing: 2px;
   ${props => props.italic && css`
     font-style: italic;
   `}
