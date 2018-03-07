@@ -1,16 +1,5 @@
 import React, { Component } from 'react'
-import {
-  Aside,
-  ContactLink,
-  Content,
-  InsightsLink,
-  LogoImage,
-  LogoText,
-  TGMenuItem,
-  TGTitle,
-  TGDescription,
-  TGProfileListItem
-} from '../../../../components'
+import { Aside, Content, InsightsLink, LogoImage, LogoText, TGMenuItem, TGTitle, TGDescription, TGProfileListItem, ContactBar } from '../../../../components'
 import FontAwesome from 'react-fontawesome'
 
 const teamMembers = ['Barna Semsey', 'Chris Malloy', 'Dani Mamadou', 'Dimitrios Kavvathas', 'Kimon Gomozias', 'Lauren Cohen', 'Lucas Gaylord']
@@ -30,7 +19,7 @@ class Section4 extends Component {
       <Content url='/assets/img/background_images4.jpg'>
         <LogoImage src='/assets/img/white-icon.png' width='100' height='100' />
         <LogoText src='/assets/img/logo.png' width='180' height='35' />
-        <ContactLink>CONTACT</ContactLink>
+        <ContactBar />
         <InsightsLink>INSIGHTS</InsightsLink>
         <Aside>
           <TGMenuItem> Team </TGMenuItem>

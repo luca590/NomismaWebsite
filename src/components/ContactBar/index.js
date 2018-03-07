@@ -30,23 +30,23 @@ class ContactBar extends React.Component {
       <div>
         {
           !isOpen &&
-          <ContactLink onClick={() => { this.setState({ isOpen: true }); }}>CONTACT</ContactLink>
+          <ContactLink onClick={() => { this.setState({ isOpen: true }) }}>CONTACT</ContactLink>
         }
         {
           isOpen &&
           <div style={styles.container}>
             <div style={styles.wrapper}>
-              <StyledLink href="#">
-                <i className="fa fa-envelope-o"></i>
+              <StyledLink href='#'>
+                <i className='fa fa-envelope-o' />
               </StyledLink>
-              <StyledLink href="#">
-                <i className="fa fa-phone"></i>
+              <StyledLink href='#'>
+                <i className='fa fa-phone' />
               </StyledLink>
-              <StyledLink href="#">
-                <i className="fa fa-map-marker"></i>
+              <StyledLink href='#'>
+                <i className='fa fa-map-marker' />
               </StyledLink>
-              <CloseButton onClick={() => { this.setState({ isOpen: false }); }}>
-                <i className="fa fa-close"></i>
+              <CloseButton onClick={() => { this.setState({ isOpen: false }) }}>
+                <i className='fa fa-close' />
               </CloseButton>
             </div>
           </div>

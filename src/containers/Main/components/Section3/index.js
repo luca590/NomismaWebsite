@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import {
   Aside,
-  ContactLink,
   Content,
   InsightsLink,
   LogoImage,
   LogoText,
   TGDetail,
   TGMenuItem,
-  TGTitle
+  TGTitle,
+  ContactBar
 } from '../../../../components'
 
 class Section3 extends Component {
@@ -17,7 +17,7 @@ class Section3 extends Component {
       <Content url='/assets/img/background_images3.jpg'>
         <LogoImage src='/assets/img/white-icon.png' width='100' height='100' />
         <LogoText src='/assets/img/logo.png' width='180' height='35' />
-        <ContactLink>CONTACT</ContactLink>
+        <ContactBar />
         <InsightsLink>INSIGHTS</InsightsLink>
         <Aside>
           <TGMenuItem> White paper </TGMenuItem>
