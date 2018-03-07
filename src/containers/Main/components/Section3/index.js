@@ -72,7 +72,8 @@ const styles = {
     fontFamily: 'Stag-Book',
     fontWeight: 'normal',
     fontSize: 20,
-    padding: 10
+    padding: 10,
+    color: 'white'
   }
 }
 
