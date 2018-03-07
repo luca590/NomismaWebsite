@@ -4,13 +4,13 @@ import { Content, TGTitle, TGDescription, TGNote, TGMenuItem, TGDetail, Aside } 
 class Section3 extends Component {
   render () {
     return (
-      <Content url='/assets/img/background_images.jpg'>
+      <Content url='/assets/img/background_images3.jpg'>
         <Aside>
-          <TGMenuItem> Nomisma </TGMenuItem>
+          <TGMenuItem> White paper </TGMenuItem>
         </Aside>
         <div style={styles.content}>
           <div style={styles.title}>
-            <TGTitle> Risk sharing revolutionizes <br /> the cryptocurrency space </TGTitle>
+            <TGTitle> Abstract </TGTitle>
           </div>
           <div style={styles.body}>
             <div style={styles.description}>
