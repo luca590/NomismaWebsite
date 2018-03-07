@@ -8,7 +8,6 @@ class Main extends Component {
       <div>
         <Section1 />
         <Section2 />
-        <Section1 />
       </div>
     )
   }
