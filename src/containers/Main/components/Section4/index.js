@@ -1,7 +1,17 @@
 import React, { Component } from 'react'
 import { Content, TGTitle, TGDescription, TGNote, TGMenuItem, TGDetail, Aside, TGProfileListItem } from '../../../../components'
-
+import FontAwesome from 'react-fontawesome'
 class Section4 extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      selectedProfileIndex: 0
+    }
+  }
+  onSelectProfile (index) {
+    console.log(index, '=====')
+    this.setState({selectedProfileIndex: index})
+  }
   render () {
     return (
       <Content url='/assets/img/background_images4.jpg'>
@@ -21,11 +31,36 @@ class Section4 extends Component {
             <div style={styles.detail}>
               <div style={styles.profileMenu}>
                 <ul style={styles.profileMenuContent}>
-                  <li style={styles.prifileList}><TGProfileListItem> Chris Malloy </TGProfileListItem></li>
-                  <li style={styles.prifileList}><TGProfileListItem> Dimitrios Kavvathas </TGProfileListItem></li>
-                  <li style={styles.prifileList}><TGProfileListItem> Kimon Gomozias </TGProfileListItem></li>
-                  <li style={styles.prifileList}><TGProfileListItem> Lauren Cohen </TGProfileListItem></li>
-                  <li style={styles.prifileList}><TGProfileListItem> Lucas Gaylord </TGProfileListItem></li>
+                  <li style={styles.prifileList}>
+                    <div style={styles.activeIconContainer}>
+                      <FontAwesome style={{color: 'white', display: this.state.selectedProfileIndex === 0 ? 'block' : 'none'}} name='long-arrow-right' />
+                    </div>
+                    <TGProfileListItem style={styles.activeName} onClick={() => this.onSelectProfile(0)}> Chris Malloy </TGProfileListItem>
+                  </li>
+                  <li style={styles.prifileList}>
+                    <div style={styles.activeIconContainer}>
+                      <FontAwesome style={{color: 'white', display: this.state.selectedProfileIndex === 1 ? 'block' : 'none'}} name='long-arrow-right' />
+                    </div>
+                    <TGProfileListItem style={styles.activeName} onClick={() => this.onSelectProfile(1)}> Dimitrios Kavvathas </TGProfileListItem>
+                  </li>
+                  <li style={styles.prifileList}>
+                    <div style={styles.activeIconContainer}>
+                      <FontAwesome style={{color: 'white', display: this.state.selectedProfileIndex === 2 ? 'block' : 'none'}} name='long-arrow-right' />
+                    </div>
+                    <TGProfileListItem style={styles.activeName} onClick={() => this.onSelectProfile(2)}> Kimon Gomozias </TGProfileListItem>
+                  </li>
+                  <li style={styles.prifileList}>
+                    <div style={styles.activeIconContainer}>
+                      <FontAwesome style={{color: 'white', display: this.state.selectedProfileIndex === 3 ? 'block' : 'none'}} name='long-arrow-right' />
+                    </div>
+                    <TGProfileListItem style={styles.activeName} onClick={() => this.onSelectProfile(3)}> Lauren Cohen </TGProfileListItem>
+                  </li>
+                  <li style={styles.prifileList}>
+                    <div style={styles.activeIconContainer}>
+                      <FontAwesome style={{color: 'white', display: this.state.selectedProfileIndex === 4 ? 'block' : 'none'}} name='long-arrow-right' />
+                    </div>
+                    <TGProfileListItem style={styles.activeName} onClick={() => this.onSelectProfile(4)}> Lucas Gaylord </TGProfileListItem>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -72,7 +107,18 @@ const styles = {
   },
   prifileList: {
     padding: 15,
-
+    display: 'flex',
+    flexDirection: 'row'
+  },
+  activeIconContainer: {
+    width: 50
+  },
+  activeIcon: {
+    color: 'white',
+    marginRight: 20,
+  },
+  activeName: {
+    flex: 1
   }
 }
 
