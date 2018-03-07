@@ -8,17 +8,15 @@ import {
   LogoText,
   TGDetail,
   TGMenuItem,
-  TGTitle,
-  TGDescription,
-  TGNote
+  TGTitle
 } from '../../../../components'
 
 class Section3 extends Component {
   render () {
     return (
       <Content url='/assets/img/background_images3.jpg'>
-        <LogoImage src="/assets/img/white-icon.png" width="100" height="100"></LogoImage>
-        <LogoText src="/assets/img/logo.png" width="180" height="35"></LogoText>
+        <LogoImage src='/assets/img/white-icon.png' width='100' height='100' />
+        <LogoText src='/assets/img/logo.png' width='180' height='35' />
         <ContactLink>CONTACT</ContactLink>
         <InsightsLink>INSIGHTS</InsightsLink>
         <Aside>
@@ -31,15 +29,15 @@ class Section3 extends Component {
           <div style={styles.body}>
             <div style={styles.detail}>
               <TGDetail>
-                Risk sharing is the basic function of finance. Meanwhile, the broad adoption of cryptocurrencies 
-                and the expansion of the entire blockchain ecosystem are hampered by the extreme volatility of 
-                cryptocurrency prices. We propose the adaptation of seasoned finance applications with an eye 
-                towards revolutionizing the blockchain ecosystem. To do so, we create a new platform that 
-                promotesfinancial system-wide optimal risk sharing by designing and customizing portfolios that 
-                deliver fixed income equivalent cash flow profiles with collateralized cryptocurrency underlyings. 
-                Our solution increases the appeal of blockchain investments to the average investor, both retail 
-                and institutional. The implications of allowing investor separation along the risk aversion and 
-                diversification spectrum, by enabling the generation of collateralized cash flow streams tranched 
+                Risk sharing is the basic function of finance. Meanwhile, the broad adoption of cryptocurrencies
+                and the expansion of the entire blockchain ecosystem are hampered by the extreme volatility of
+                cryptocurrency prices. We propose the adaptation of seasoned finance applications with an eye
+                towards revolutionizing the blockchain ecosystem. To do so, we create a new platform that
+                promotesfinancial system-wide optimal risk sharing by designing and customizing portfolios that
+                deliver fixed income equivalent cash flow profiles with collateralized cryptocurrency underlyings.
+                Our solution increases the appeal of blockchain investments to the average investor, both retail
+                and institutional. The implications of allowing investor separation along the risk aversion and
+                diversification spectrum, by enabling the generation of collateralized cash flow streams tranched
                 according to risk preferences and liquidity profiles, are profound.
               </TGDetail>
             </div>

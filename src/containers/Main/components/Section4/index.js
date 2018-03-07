@@ -6,17 +6,15 @@ import {
   InsightsLink,
   LogoImage,
   LogoText,
-  TGDetail,
   TGMenuItem,
   TGTitle,
   TGDescription,
-  TGNote,
   TGProfileListItem
 } from '../../../../components'
 import FontAwesome from 'react-fontawesome'
 
 class Section4 extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       selectedProfileIndex: 0
@@ -29,8 +27,8 @@ class Section4 extends Component {
   render () {
     return (
       <Content url='/assets/img/background_images4.jpg'>
-        <LogoImage src="/assets/img/white-icon.png" width="100" height="100"></LogoImage>
-        <LogoText src="/assets/img/logo.png" width="180" height="35"></LogoText>
+        <LogoImage src='/assets/img/white-icon.png' width='100' height='100' />
+        <LogoText src='/assets/img/logo.png' width='180' height='35' />
         <ContactLink>CONTACT</ContactLink>
         <InsightsLink>INSIGHTS</InsightsLink>
         <Aside>
@@ -38,7 +36,7 @@ class Section4 extends Component {
         </Aside>
         <div style={styles.content}>
           <div style={styles.title}>
-            <TGTitle>  </TGTitle>
+            <TGTitle> Team </TGTitle>
           </div>
           <div style={styles.body}>
             <div style={styles.description}>
@@ -133,7 +131,7 @@ const styles = {
   },
   activeIcon: {
     color: 'white',
-    marginRight: 20,
+    marginRight: 20
   },
   activeName: {
     flex: 1

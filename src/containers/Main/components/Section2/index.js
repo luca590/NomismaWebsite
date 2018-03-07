@@ -15,8 +15,8 @@ class Section2 extends Component {
   render () {
     return (
       <Content url='/assets/img/background_images2.jpg'>
-        <LogoImage src="/assets/img/white-icon.png" width="100" height="100"></LogoImage>
-        <LogoText src="/assets/img/logo.png" width="180" height="35"></LogoText>
+        <LogoImage src='/assets/img/white-icon.png' width='100' height='100' />
+        <LogoText src='/assets/img/logo.png' width='180' height='35' />
         <ContactLink>CONTACT</ContactLink>
         <InsightsLink>INSIGHTS</InsightsLink>
         <Aside>
