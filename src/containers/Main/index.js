@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Section1 from './components/Section1'
 import Section2 from './components/Section2'
+import Section3 from './components/Section3'
 
 class Main extends Component {
   render () {
@@ -8,7 +9,7 @@ class Main extends Component {
       <div>
         <Section1 />
         <Section2 />
-        <Section1 />
+        <Section3 />
       </div>
     )
   }
