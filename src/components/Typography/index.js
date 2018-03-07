@@ -15,7 +15,7 @@ export const TGDescription = styled.h2`
   color: white;
   font-family: 'Stag-Sans-Light';
   font-size: 20pt;
-  line-height: 1.2;
+  line-height: 1.3;
   ${props => props.italic && css`
     font-style: italic;
   `}
@@ -37,7 +37,7 @@ export const TGDetail = styled.h3`
   color: white;
   font-family: 'Stag-Light';
   font-size: 14pt;
-  line-height: 1.4;
+  line-height: 1.5;
   ${props => props.italic && css`
     font-style: italic;
   `}
