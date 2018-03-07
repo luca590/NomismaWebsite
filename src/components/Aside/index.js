@@ -12,7 +12,7 @@ const Aside = (props) => {
 const Wrapper = styled.div`
   position: absolute;
   top: 300px;
-  left: 50px;
+  left: 70px;
   width: 250px;
   color: white;
 `

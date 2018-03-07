@@ -30,7 +30,7 @@ class Section1 extends Component {
 const styles = {
   container: {
     paddingLeft: 300,
-    paddingTop: 250,
+    paddingTop: 300,
     paddingRight: 70
   },
   body: {
@@ -39,7 +39,6 @@ const styles = {
     width: '50%'
   },
   title: {
-    paddingTop: 50,
     paddingBottom: 50
   },
   content: {
