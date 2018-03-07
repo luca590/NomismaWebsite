@@ -3,6 +3,15 @@ import { Aside, Content, InsightsLink, LogoImage, LogoText, TGMenuItem, TGTitle,
 import FontAwesome from 'react-fontawesome'
 
 const teamMembers = ['Barna Semsey', 'Chris Malloy', 'Dani Mamadou', 'Dimitrios Kavvathas', 'Kimon Gomozias', 'Lauren Cohen', 'Lucas Gaylord']
+const teamMembersLink = [
+  'https://www.linkedin.com/in/barna-semsey-bb791/',
+  'https://www.linkedin.com/in/christopher-malloy-5042004/',
+  'https://www.linkedin.com/in/danielmamadou/',
+  'https://www.linkedin.com/in/dimitrios-kavvathas-3bb3654/',
+  'https://www.linkedin.com/in/kimon-gkomozias-88994715/',
+  'https://laurenhcohen.com/',
+  'https://www.linkedin.com/in/lucas-gaylord-0b3a1882/'
+]
 
 class Section4 extends Component {
   constructor (props) {
@@ -13,6 +22,7 @@ class Section4 extends Component {
   }
   onSelectProfile (index) {
     this.setState({selectedProfileIndex: index})
+    window.open(teamMembersLink[index], '_blank')
   }
   render () {
     return (
