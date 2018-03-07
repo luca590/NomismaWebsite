@@ -43,7 +43,7 @@ const styles = {
     paddingRight: 50
   },
   title: {
-    padding: 50,
+    padding: 50
   },
   body: {
     display: 'flex',

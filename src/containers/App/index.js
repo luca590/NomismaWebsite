@@ -6,7 +6,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import { Main } from '../'
 
 // Components
-import { Header, Aside } from '../../components'
+import { Header } from '../../components'
 
 class App extends Component {
   render () {
