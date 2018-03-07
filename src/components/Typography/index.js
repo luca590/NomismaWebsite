@@ -39,6 +39,7 @@ export const TGDetail = styled.h3`
   font-family: 'Stag-Light';
   font-size: 14pt;
   line-height: 1.5;
+  letter-spacing: 1px;
   ${props => props.italic && css`
     font-style: italic;
   `}
@@ -48,7 +49,8 @@ export const TGMenuItem = styled.h1`
   margin: 0;
   color: white;
   font-family: 'Stag-Light';
-  font-size: 14.4pt;
+  font-size: 15pt;
+  letter-spacing: 2.5px;
   ${props => props.italic && css`
     font-style: italic;
   `}
