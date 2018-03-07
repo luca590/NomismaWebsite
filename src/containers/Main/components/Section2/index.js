@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {
   Aside,
-  ContactLink,
+  ContactBar,
   Content,
   InsightsLink,
   LogoImage,
@@ -17,7 +17,7 @@ class Section2 extends Component {
       <Content url='/assets/img/background_images2.jpg'>
         <LogoImage src="/assets/img/white-icon.png" width="100" height="100"></LogoImage>
         <LogoText src="/assets/img/logo.png" width="180" height="35"></LogoText>
-        <ContactLink>CONTACT</ContactLink>
+        <ContactBar></ContactBar>
         <InsightsLink>INSIGHTS</InsightsLink>
         <Aside>
           <TGMenuItem> Nomisma </TGMenuItem>
