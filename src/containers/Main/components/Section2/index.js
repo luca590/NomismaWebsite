@@ -8,15 +8,16 @@ class Section1 extends Component {
         <Aside>
           <TGMenuItem> Nomisma </TGMenuItem>
         </Aside>
-        <div style={styles.content}>
-          <div style={styles.title}>
-            <TGTitle> Nomisma </TGTitle>
-          </div>
+        <div style={styles.container}>
           <div style={styles.body}>
-            <div style={styles.detail}>
+            <div style={styles.title}>
+              <TGTitle> Nomisma </TGTitle>
+            </div>
+            <div style={styles.content}>
               <TGDetail>
-                Risk sharing is a cornerstone of finance. Cryptocurrency adoption is hampered by extreme volatility in cryptocurrency prices.
-                We are the first to bring a risk sharing solution to the crypto universe. Our key innovation is to use seasoned finance applications and deep financial insights coupled with blockchain technology. If our approach is successful, it is revolutionary for the blockchain ecosystem. Our platform promotes financial system-wide optimal risk sharing by designing and customizing portfolios that deliver fixed income equivalent cash flow profiles with collateralized cryptocurrency underlyings. Our solution makes cryptocurrencies a viable asset class for all investors.
+                The wider investment world has only barely begun to invest into the blockchain space, in large part due to the enormous volatility in cryptocurrency prices.
+                This type of volatility makes cryptocurrencies an unattractive asset class to many investors, both retail and institutional.
+                Extreme price volatility also slows the adoption of various blockchain-enabled innovations, which are often funded through tokens/ICOs in the cryptocurrency space.
               </TGDetail>
             </div>
           </div>
@@ -27,30 +28,22 @@ class Section1 extends Component {
 }
 
 const styles = {
-  content: {
-    flex: 1,
-    flexDirection: 'column',
+  container: {
     paddingLeft: 300,
-    paddingTop: 200,
-    paddingRight: 50
-  },
-  title: {
-    padding: 50
+    paddingTop: 250,
+    paddingRight: 70
   },
   body: {
-    display: 'flex',
-    flex: 1,
-    flexDirection: 'row'
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    width: '50%'
   },
-  description: {
-    flex: 1,
-    paddingRight: 50
+  title: {
+    paddingTop: 50,
+    paddingBottom: 50
   },
-  subTitle: {
-    paddingBottom: 20
-  },
-  detail: {
-    flex: 2
+  content: {
+    width: '600px'
   }
 }
 
