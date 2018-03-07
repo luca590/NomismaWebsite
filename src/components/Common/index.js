@@ -8,7 +8,7 @@ export const LogoImage = styled.img`
 
 export const LogoText = styled.img`
   position: absolute;
-  top: 70px;
+  top: 80px;
   right: 70px;
 `
 
