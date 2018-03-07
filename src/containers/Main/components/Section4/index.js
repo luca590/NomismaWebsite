@@ -15,11 +15,8 @@ class Section4 extends Component {
           <div style={styles.body}>
             <div style={styles.description}>
               <TGDescription style={styles.subTitle}>
-                Imperfect as our financial system is, I still find myself admiring it for what it does and imagining how much more impressive it can be in the future.”
+                Our team members have backgrounds in both institutional and academic finance and economics with a passion for entrepreneurship and financial technology.
               </TGDescription>
-              <TGNote>
-                Finance and the Good Society, Robert Shiller.
-              </TGNote>
             </div>
             <div style={styles.detail}>
               <TGDetail>
