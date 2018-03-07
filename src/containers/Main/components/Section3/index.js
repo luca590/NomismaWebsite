@@ -28,6 +28,8 @@ class Section3 extends Component {
               </TGDetail>
             </div>
           </div>
+          <a style={styles.link} href='assets/pdf/SummaryDraft_Feb202018HK.pdf' download='SummaryDraft_Feb202018HK.pdf'>Download </a>
+            {/* <a style={styles.link} href='assets/pdf/SummaryDraft_Feb202018HK.pdf' target='_blank'>View </a> */}
         </div>
       </Content>
     )
@@ -50,6 +52,9 @@ const styles = {
     flex: 1,
     flexDirection: 'row'
   },
+  footer: {
+    height: '10%'
+  },
   description: {
     flex: 1,
     paddingRight: 50
@@ -59,6 +64,15 @@ const styles = {
   },
   detail: {
     flex: 2
+  },
+  link: {
+    position: 'absolute',
+    bottom: 30,
+    right: 100,
+    fontFamily: 'Stag-Book',
+    fontWeight: 'normal',
+    fontSize: 20,
+    padding: 10
   }
 }
 
