@@ -21,7 +21,6 @@ class Section1 extends Component {
         <LogoImage src='/assets/img/white-icon.png' width='100' height='100' />
         <LogoText src='/assets/img/logo.png' width='180' height='35' />
         <ContactBar />
-        {/* <InsightsLink>INSIGHTS</InsightsLink> */}
         <Aside>
           <TGMenuItem> Nomisma </TGMenuItem>
         </Aside>
@@ -50,33 +49,5 @@ class Section1 extends Component {
     )
   }
 }
-
-// const styles = {
-//   content: {
-//     flex: 1,
-//     flexDirection: 'column',
-//     paddingLeft: '23%',
-//     paddingTop: 300,
-//     paddingRight: '18%'
-//   },
-//   title: {
-//   },
-//   body: {
-//     marginTop: 50,
-//     display: 'flex',
-//     flex: 1,
-//     flexDirection: 'row'
-//   },
-//   description: {
-//     flex: 1,
-//     paddingRight: 50
-//   },
-//   subTitle: {
-//     paddingBottom: 20
-//   },
-//   detail: {
-//     flex: 2
-//   }
-// }
 
 export default Section1
