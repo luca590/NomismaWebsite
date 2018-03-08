@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import {
   Aside,
   Content,
-  InsightsLink,
   LogoImage,
   LogoText,
   TGDetail,
@@ -59,7 +58,6 @@ const styles = {
     paddingRight: '18%'
   },
   title: {
-    // padding: '10%'
   },
   body: {
     marginTop: 50,
@@ -75,8 +73,7 @@ const styles = {
     paddingBottom: 20
   },
   detail: {
-    flex: 2,
-    // paddingRight: 200
+    flex: 2
   }
 }
 

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import {
   Aside,
   Content,
-  InsightsLink,
   LogoImage,
   LogoText,
   TGDetail,
@@ -18,7 +17,6 @@ class Section3 extends Component {
         <LogoImage src='/assets/img/white-icon.png' width='100' height='100' />
         <LogoText src='/assets/img/logo.png' width='180' height='35' />
         <ContactBar />
-        {/* <InsightsLink>INSIGHTS</InsightsLink> */}
         <Aside>
           <TGMenuItem> White paper </TGMenuItem>
         </Aside>
@@ -58,7 +56,6 @@ const styles = {
     paddingRight: '20%'
   },
   title: {
-    // padding: 50
     textAlign: 'center'
   },
   body: {
@@ -71,8 +68,7 @@ const styles = {
     height: '10%'
   },
   description: {
-    flex: 1,
-    // paddingRight: 50
+    flex: 1
   },
   subTitle: {
     paddingBottom: 20

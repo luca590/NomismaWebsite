@@ -1,5 +1,15 @@
 import React, { Component } from 'react'
-import { Aside, Content, InsightsLink, LogoImage, LogoText, TGMenuItem, TGTitle, TGDescription, TGProfileListItem, ContactBar } from '../../../../components'
+import {
+  Aside,
+  Content,
+  LogoImage,
+  LogoText,
+  TGMenuItem,
+  TGTitle,
+  TGDescription,
+  TGProfileListItem,
+  ContactBar
+} from '../../../../components'
 import FontAwesome from 'react-fontawesome'
 
 const teamMembers = [
@@ -50,7 +60,6 @@ class Section4 extends Component {
         <LogoImage src='/assets/img/white-icon.png' width='100' height='100' />
         <LogoText src='/assets/img/logo.png' width='180' height='35' />
         <ContactBar />
-        {/* <InsightsLink>INSIGHTS</InsightsLink> */}
         <Aside>
           <TGMenuItem> Team </TGMenuItem>
         </Aside>
@@ -138,7 +147,6 @@ const styles = {
     paddingRight: '18%'
   },
   title: {
-    // padding: 50
   },
   body: {
     marginTop: 50,
