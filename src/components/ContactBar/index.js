@@ -36,14 +36,8 @@ class ContactBar extends React.Component {
           isOpen &&
           <div style={styles.container}>
             <div style={styles.wrapper}>
-              <StyledLink href='#'>
+              <StyledLink href='mailto:nomismafoundation@gmail.com'>
                 <i className='fa fa-envelope-o' />
-              </StyledLink>
-              <StyledLink href='#'>
-                <i className='fa fa-phone' />
-              </StyledLink>
-              <StyledLink href='#'>
-                <i className='fa fa-map-marker' />
               </StyledLink>
               <CloseButton onClick={() => { this.setState({ isOpen: false }) }}>
                 <i className='fa fa-close' />

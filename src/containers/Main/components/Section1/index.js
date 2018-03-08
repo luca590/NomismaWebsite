@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 import {
   Aside,
+  ContactBar,
   Content,
   LogoImage,
   LogoText,
-  TGDetail,
-  TGMenuItem,
-  TGTitle,
   TGDescription,
+  TGDetail,
   TGNote,
-  ContactBar
+  TGMenuItem,
+  TGTitle
 } from '../../../../components'
 
 class Section1 extends Component {
