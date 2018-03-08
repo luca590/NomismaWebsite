@@ -5,6 +5,7 @@
     padding-left: 23%;
     padding-top: 300px;
     padding-right: 20%;
+    padding-bottom: 70px;
   }
   .title {
     text-align: center;
@@ -27,5 +28,8 @@
     font-size: 20px;
     padding: 10;
     color: white;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }
