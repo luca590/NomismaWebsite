@@ -1,5 +1,16 @@
 import React, { Component } from 'react'
-import { Aside, Content, InsightsLink, LogoImage, LogoText, TGMenuItem, TGTitle, TGDescription, TGProfileListItem, ContactBar } from '../../../../components'
+import {
+  Aside,
+  ContactBar,
+  Content,
+  // InsightsLink,
+  LogoImage,
+  LogoText,
+  TGDescription,
+  TGMenuItem,
+  TGProfileListItem,
+  TGTitle
+} from '../../../../components'
 import FontAwesome from 'react-fontawesome'
 
 const teamMembers = ['Barna Semsey', 'Chris Malloy', 'Dani Mamadou', 'Dimitrios Kavvathas', 'Kimon Gomozias', 'Lauren Cohen', 'Lucas Gaylord']

@@ -3,7 +3,7 @@ import {
   Aside,
   ContactBar,
   Content,
-  InsightsLink,
+  // InsightsLink,
   LogoImage,
   LogoText,
   TGDetail,
