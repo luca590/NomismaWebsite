@@ -1,20 +1,18 @@
-#section2{
-  .container {
+.section2{
+  .content {
     flex: 1;
     flex-direction: column;
     padding-left: 300px;
     padding-top: 300px;
     padding-right: 70px;
-  }
-  .body {
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+  }
+  .body {
+    margin-top: 50px;
   }
   .title {
     /* padding-bottom: 50px; */
-  }
-  .content {
-    width: 600px;
   }
 }
