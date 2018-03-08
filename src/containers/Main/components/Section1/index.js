@@ -5,6 +5,7 @@ import {
   Content,
   LogoImage,
   LogoText,
+  Header,
   TGDescription,
   TGDetail,
   TGNote,
@@ -19,9 +20,8 @@ class Section1 extends Component {
   render () {
     return (
       <Content id='section1' url='/assets/img/background_images.jpg'>
-        <LogoImage src='/assets/img/white-icon.png' width='100' height='100' />
-        <LogoText src='/assets/img/logo.png' width='180' height='35' />
-        <TopMenu />
+        <Header />
+        {/* <TopMenu /> */}
         <ContactBar />
         <Aside>
           <TGMenuItem> Nomisma </TGMenuItem>

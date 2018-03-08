@@ -27,7 +27,7 @@ class ContactBar extends React.Component {
   render () {
     const { isOpen } = this.state
     return (
-      <div>
+      <Wrapper>
         {
           !isOpen &&
           <ContactLink onClick={() => { this.setState({ isOpen: true }) }}>CONTACT</ContactLink>
@@ -45,10 +45,16 @@ class ContactBar extends React.Component {
             </div>
           </div>
         }
-      </div>
+      </Wrapper>
     )
   }
 }
+
+const Wrapper = styled.div`
+  @media (max-width: 576px) {
+    display: none;
+  }
+`
 
 const styles = {
   container: {

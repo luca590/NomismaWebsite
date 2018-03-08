@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <MuiThemeProvider>
         <Fragment>
-          <Header />
+          {/* <Header /> */}
           <Switch>
             <Route exact path='/' component={Main} />
           </Switch>

@@ -5,12 +5,20 @@
     padding-left: 23%;
     padding-top: 300px;
     padding-right: 18%;
+    padding-bottom: 200px;
+    @media (max-width: 576px) {
+      padding: 100px;
+      padding-right: 50px;
+    }
   }
   .body {
     margin-top: 50px;
     display: flex;
     flex: 1;
     flex-direction: row;
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
   }
   .title {
   
@@ -18,6 +26,7 @@
   .description {
     flex: 1;
     padding-right: 50px;
+    padding-bottom: 50px;
   }
   .subTitle {
     padding-bottom: 20px;

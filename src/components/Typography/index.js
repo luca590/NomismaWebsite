@@ -10,6 +10,10 @@ export const TGTitle = styled.h1`
   ${props => props.italic && css`
     font-style: italic;
   `}
+
+  @media (max-width: 576px) {
+    font-size: 27pt;
+  }
 `
 
 export const TGDescription = styled.h2`
@@ -18,9 +22,16 @@ export const TGDescription = styled.h2`
   font-family: 'Stag-Sans-Light';
   font-size: 20pt;
   line-height: 1.3;
+  letter-spacing: 2px;
+  font-weight: 300;
   ${props => props.italic && css`
     font-style: italic;
   `}
+
+  @media (max-width: 576px) {
+    font-weight: 100;
+    font-size: 17pt;
+  }
 `
 
 export const TGNote = styled.h2`
@@ -32,6 +43,11 @@ export const TGNote = styled.h2`
   ${props => props.italic && css`
     font-style: italic;
   `}
+
+  @media (max-width: 576px) {
+    font-weight: 100;
+    font-size: 14pt;
+  }
 `
 
 export const TGDetail = styled.h3`
@@ -44,6 +60,11 @@ export const TGDetail = styled.h3`
   ${props => props.italic && css`
     font-style: italic;
   `}
+
+  @media (max-width: 576px) {
+    font-weight: 100;
+    font-size: 12pt;
+  }
 `
 
 export const TGMenuItem = styled.h1`

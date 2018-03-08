@@ -18,40 +18,21 @@ const CloseButton = styled.a`
 `
 
 class TopMenu extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      isOpen: false
-    }
-  }
-
   render () {
-    const { isOpen } = this.state
     return (
-      <div>
-        {
-          !isOpen &&
-          <TopMenuButton onClick={() => { this.setState({ isOpen: true }) }}>
-            <FontAwesome size='3x' style={{color: 'white'}} name='bars' />
-          </TopMenuButton>
-        }
-        {
-          isOpen &&
-          <div style={styles.container}>
-            <div style={styles.topbar}>
-              <LogoImage style={styles.logoImage} src='/assets/img/white-icon.png' width='100' height='100' />
-              <LogoText style={styles.logoText} src='/assets/img/logo.png' width='180' height='35' />
-              <CloseButton style={styles.closeButton} onClick={() => { this.setState({ isOpen: false }) }}>
-                <i className='fa fa-close' />
-              </CloseButton>
-            </div>
-            <div style={styles.wrapper}>
-              <TGMenuItem style={styles.menuItem}> Nomisma </TGMenuItem>
-              <TGMenuItem style={styles.menuItem}> White paper </TGMenuItem>
-              <TGMenuItem style={styles.menuItem}> Team </TGMenuItem>
-              </div>
+      <div style={styles.container}>
+        <div style={styles.topbar}>
+          <LogoImage style={styles.logoImage} src='/assets/img/white-icon.png' width='100' height='100' />
+          <LogoText style={styles.logoText} src='/assets/img/logo.png' width='180' height='35' />
+          <CloseButton style={styles.closeButton} onClick={() => { this.props.onClose() }}>
+            <i className='fa fa-close' />
+          </CloseButton>
+        </div>
+        <div style={styles.wrapper}>
+          <TGMenuItem style={styles.menuItem}> Nomisma </TGMenuItem>
+          <TGMenuItem style={styles.menuItem}> White paper </TGMenuItem>
+          <TGMenuItem style={styles.menuItem}> Team </TGMenuItem>
           </div>
-        }
       </div>
     )
   }
@@ -63,7 +44,6 @@ const styles = {
     left: 0,
     top: 0,
     padding: 50,
-    // paddingBottom: 100,
     width: '100%',
     backgroundColor: '#373536',
     textAlign: 'center',

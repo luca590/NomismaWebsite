@@ -15,6 +15,10 @@ const Wrapper = styled.div`
   left: 70px;
   width: 250px;
   color: white;
+
+  @media (max-width: 576px) {
+    display: none;
+  }
 `
 
 export default Aside

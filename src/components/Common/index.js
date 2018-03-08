@@ -29,9 +29,14 @@ export const InsightsLink = styled.a`
 `
 
 export const TopMenuButton = styled.div`
-  position: absolute;
-  top: 80px;
-  right: 70px;
+display: none;
+position: absolute;
+top: 30px;
+  right: 50px;
   width: 50px;
   height: 50px;
+
+  @media (max-width: 576px) {
+    display: block;
+  }
 `
