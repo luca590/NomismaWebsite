@@ -76,58 +76,16 @@ class Section4 extends Component {
             <div style={styles.detail}>
               <div style={styles.profileMenu}>
                 <ul style={styles.profileMenuContent}>
-                  {/* {
-                    teamMembers.map((member) => {
-                      <li style={styles.prifileList}>
+                  {
+                    teamMembers.map((member, index) => (
+                      <li key={index} style={styles.prifileList}>
                         <div style={styles.activeIconContainer}>
-                          <FontAwesome style={{color: 'white', display: this.state.selectedProfileIndex === 0 ? 'block' : 'none'}} name='long-arrow-right' />
+                          <FontAwesome style={{color: 'white', display: this.state.selectedProfileIndex === index ? 'block' : 'none'}} name='long-arrow-right' />
                         </div>
                         <TGProfileListItem style={styles.activeName} onClick={() => this.onSelectProfile(index)}> {member.name} </TGProfileListItem>
                       </li>
-                    })
-                  } */}
-                  <li style={styles.prifileList}>
-                    <div style={styles.activeIconContainer}>
-                      <FontAwesome style={{color: 'white', display: this.state.selectedProfileIndex === 0 ? 'block' : 'none'}} name='long-arrow-right' />
-                    </div>
-                    <TGProfileListItem style={styles.activeName} onClick={() => this.onSelectProfile(0)}> Lauren Cohen </TGProfileListItem>
-                  </li>
-                  <li style={styles.prifileList}>
-                    <div style={styles.activeIconContainer}>
-                      <FontAwesome style={{color: 'white', display: this.state.selectedProfileIndex === 1 ? 'block' : 'none'}} name='long-arrow-right' />
-                    </div>
-                    <TGProfileListItem style={styles.activeName} onClick={() => this.onSelectProfile(1)}> Lucas Gaylord </TGProfileListItem>
-                  </li>
-                  <li style={styles.prifileList}>
-                    <div style={styles.activeIconContainer}>
-                      <FontAwesome style={{color: 'white', display: this.state.selectedProfileIndex === 2 ? 'block' : 'none'}} name='long-arrow-right' />
-                    </div>
-                    <TGProfileListItem style={styles.activeName} onClick={() => this.onSelectProfile(2)}> Kimon Gomozias </TGProfileListItem>
-                  </li>
-                  <li style={styles.prifileList}>
-                    <div style={styles.activeIconContainer}>
-                      <FontAwesome style={{color: 'white', display: this.state.selectedProfileIndex === 3 ? 'block' : 'none'}} name='long-arrow-right' />
-                    </div>
-                    <TGProfileListItem style={styles.activeName} onClick={() => this.onSelectProfile(3)}> Dimitrios Kavvathas </TGProfileListItem>
-                  </li>
-                  <li style={styles.prifileList}>
-                    <div style={styles.activeIconContainer}>
-                      <FontAwesome style={{color: 'white', display: this.state.selectedProfileIndex === 4 ? 'block' : 'none'}} name='long-arrow-right' />
-                    </div>
-                    <TGProfileListItem style={styles.activeName} onClick={() => this.onSelectProfile(4)}> Chris Malloy </TGProfileListItem>
-                  </li>
-                  <li style={styles.prifileList}>
-                    <div style={styles.activeIconContainer}>
-                      <FontAwesome style={{color: 'white', display: this.state.selectedProfileIndex === 5 ? 'block' : 'none'}} name='long-arrow-right' />
-                    </div>
-                    <TGProfileListItem style={styles.activeName} onClick={() => this.onSelectProfile(5)}> Dani Mamadou </TGProfileListItem>
-                  </li>
-                  <li style={styles.prifileList}>
-                    <div style={styles.activeIconContainer}>
-                      <FontAwesome style={{color: 'white', display: this.state.selectedProfileIndex === 6 ? 'block' : 'none'}} name='long-arrow-right' />
-                    </div>
-                    <TGProfileListItem style={styles.activeName} onClick={() => this.onSelectProfile(6)}> Barna Semsey </TGProfileListItem>
-                  </li>
+                    ))
+                  }
                 </ul>
               </div>
             </div>
