@@ -11,7 +11,7 @@ export const TGTitle = styled.h1`
     font-style: italic;
   `}
 
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     font-size: 25pt;
   }
 `
@@ -28,7 +28,7 @@ export const TGDescription = styled.h2`
     font-style: italic;
   `}
 
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     font-weight: 100;
     lign-height: 1;
     font-size: 15pt;
@@ -45,7 +45,7 @@ export const TGNote = styled.h2`
     font-style: italic;
   `}
 
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     font-weight: 100;
     font-size: 13pt;
   }
@@ -62,7 +62,7 @@ export const TGDetail = styled.h3`
     font-style: italic;
   `}
 
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     font-weight: 100;
     font-size: 12pt;
   }

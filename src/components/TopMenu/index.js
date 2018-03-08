@@ -1,33 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
-import { TopMenuButton, LogoImage, LogoText, TGMenuItem } from '..'
+import { TopMenuButton, TGMenuItem } from '..'
 import FontAwesome from 'react-fontawesome'
-
-const StyledLink = styled.a`
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 50px;
-  color: #FFF;
-`
-
-const CloseButton = styled.a`
-  position: absolute;
-  right: 100px;
-  font-size: 50px;
-  color: #FFF;
-`
 
 class TopMenu extends React.Component {
   render () {
     return (
       <div style={styles.container}>
-        <div style={styles.topbar}>
-          <LogoImage style={styles.logoImage} src='/assets/img/white-icon.png' width='100' height='100' />
-          <LogoText style={styles.logoText} src='/assets/img/logo.png' width='180' height='35' />
-          <CloseButton style={styles.closeButton} onClick={() => { this.props.onClose() }}>
-            <i className='fa fa-close' />
+        <TopBar>
+          <LogoImage src='/assets/img/white-icon.png' />
+          <LogoText src='/assets/img/logo.png' />
+          <CloseButton onClick={() => { this.props.onClose() }}>
+            <FontAwesome size='2x' style={{color: 'white'}} name='close' />
           </CloseButton>
-        </div>
+        </TopBar>
         <div style={styles.wrapper}>
           <TGMenuItem style={styles.menuItem}> Nomisma </TGMenuItem>
           <TGMenuItem style={styles.menuItem}> White paper </TGMenuItem>
@@ -38,44 +24,49 @@ class TopMenu extends React.Component {
   }
 }
 
+const TopBar = styled.div`
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+`
+
+const LogoImage = styled.img`
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  width: 60px;
+  height: 60px;
+`
+const LogoText = styled.img`
+  object-fit: contain;
+  height: 30px;
+`
+
+const CloseButton = styled.div`
+  position: absolute;
+  top: 35px;
+  right: 50px;
+  display: block;
+
+  @media (max-width: 768px) {
+  }
+`
+
 const styles = {
   container: {
     position: 'absolute',
     left: 0,
     top: 0,
-    padding: 50,
     width: '100%',
-    backgroundColor: '#373536',
+    backgroundColor: 'black',
     textAlign: 'center',
     zIndex: 1
   },
-  topbar: {
-    display: 'flex',
-    flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  logoImage: {
-    position: 'relative',
-    top: 'auto',
-    left: 'auto',
-    resizeMode: 'contain'
-  },
-  logoText: {
-    position: 'relative',
-    top: 'auto',
-    right: 'auto',
-    flex: 1
-  },
-  closeButton: {
-    position: 'relative',
-    top: 'auto',
-    right: 'auto'
-  },
   wrapper: {
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    padding: 50
   },
   menuItem: {
     marginTop: 30,

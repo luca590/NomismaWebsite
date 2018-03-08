@@ -51,7 +51,7 @@ class ContactBar extends React.Component {
 }
 
 const Wrapper = styled.div`
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `
