@@ -9,15 +9,15 @@ import {
   TGMenuItem,
   TGTitle
 } from '../../../../components'
+import './style.scss'
 
 class Section2 extends Component {
   render () {
     return (
-      <Content url='/assets/img/background_images2.jpg'>
+      <Content id='section2' url='/assets/img/background_images2.jpg'>
         <LogoImage src='/assets/img/white-icon.png' width='100' height='100' />
         <LogoText src='/assets/img/logo.png' width='180' height='35' />
         <ContactBar />
-        {/* <InsightsLink>INSIGHTS</InsightsLink> */}
         <Aside>
           <TGMenuItem> Nomisma </TGMenuItem>
         </Aside>

@@ -53,7 +53,7 @@ module.exports = {
       },
       {
         test: /\.(scss|css)$/,
-        use: [ 'style-loader', 'css-loader' ]
+        use: [ 'style-loader', 'css-loader', 'sass-loader' ]
       },
       {
         test: /\.(ttf|eot|otf|woff|woff2)$/,

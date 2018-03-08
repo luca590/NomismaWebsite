@@ -1,0 +1,20 @@
+#section2{
+  .container {
+    flex: 1;
+    flex-direction: column;
+    padding-left: 300px;
+    padding-top: 300px;
+    padding-right: 70px;
+  }
+  .body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .title {
+    /* padding-bottom: 50px; */
+  }
+  .content {
+    width: 600px;
+  }
+}

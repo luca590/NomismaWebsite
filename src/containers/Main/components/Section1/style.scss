@@ -1,0 +1,28 @@
+#section1{
+  .content {
+    flex: 1;
+    flex-direction: column;
+    padding-left: 23%;
+    padding-top: 300px;
+    padding-right: 18%
+  }
+  .body {
+    margin-top: 50px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+  }
+  .title {
+  
+  }
+  .description {
+    flex: 1;
+    padding-right: 50px;
+  }
+  .subTitle {
+    padding-bottom: 20px
+  }
+  .detail {
+    flex: 2;
+  }
+}
