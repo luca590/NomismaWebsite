@@ -18,6 +18,9 @@ export const ContactLink = styled.a`
   left: 40px;
   transform: rotate(-90deg);
   color: white;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const InsightsLink = styled.a`
@@ -26,6 +29,9 @@ export const InsightsLink = styled.a`
   right: 40px;
   transform: rotate(90deg);
   color: white;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const TopMenuButton = styled.div`
