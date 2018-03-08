@@ -20,7 +20,7 @@ class Section1 extends Component {
         <LogoImage src='/assets/img/white-icon.png' width='100' height='100' />
         <LogoText src='/assets/img/logo.png' width='180' height='35' />
         <ContactBar />
-        <InsightsLink>INSIGHTS</InsightsLink>
+        {/* <InsightsLink>INSIGHTS</InsightsLink> */}
         <Aside>
           <TGMenuItem> Nomisma </TGMenuItem>
         </Aside>
