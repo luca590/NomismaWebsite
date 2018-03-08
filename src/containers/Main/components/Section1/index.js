@@ -21,7 +21,6 @@ class Section1 extends Component {
     return (
       <Content id='section1' url='/assets/img/background_images.jpg'>
         <Header />
-        {/* <TopMenu /> */}
         <ContactBar />
         <Aside>
           <TGMenuItem> Nomisma </TGMenuItem>

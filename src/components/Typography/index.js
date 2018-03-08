@@ -12,7 +12,7 @@ export const TGTitle = styled.h1`
   `}
 
   @media (max-width: 576px) {
-    font-size: 27pt;
+    font-size: 25pt;
   }
 `
 
@@ -22,7 +22,7 @@ export const TGDescription = styled.h2`
   font-family: 'Stag-Sans-Light';
   font-size: 20pt;
   line-height: 1.3;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   font-weight: 300;
   ${props => props.italic && css`
     font-style: italic;
@@ -30,7 +30,8 @@ export const TGDescription = styled.h2`
 
   @media (max-width: 576px) {
     font-weight: 100;
-    font-size: 17pt;
+    lign-height: 1;
+    font-size: 15pt;
   }
 `
 
@@ -46,7 +47,7 @@ export const TGNote = styled.h2`
 
   @media (max-width: 576px) {
     font-weight: 100;
-    font-size: 14pt;
+    font-size: 13pt;
   }
 `
 
