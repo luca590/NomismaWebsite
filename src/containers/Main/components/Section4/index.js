@@ -11,6 +11,7 @@ import {
   ContactBar
 } from '../../../../components'
 import FontAwesome from 'react-fontawesome'
+import './style.scss'
 
 const teamMembers = [
   {
@@ -56,33 +57,33 @@ class Section4 extends Component {
   }
   render () {
     return (
-      <Content url='/assets/img/background_images4.jpg'>
+      <Content id='section4' url='/assets/img/background_images4.jpg'>
         <LogoImage src='/assets/img/white-icon.png' width='100' height='100' />
         <LogoText src='/assets/img/logo.png' width='180' height='35' />
         <ContactBar />
         <Aside>
           <TGMenuItem> Team </TGMenuItem>
         </Aside>
-        <div style={styles.content}>
-          <div style={styles.title}>
+        <div className='content'>
+          <div className='title'>
             <TGTitle> {teamMembers[this.state.selectedProfileIndex].name} </TGTitle>
           </div>
-          <div style={styles.body}>
-            <div style={styles.description}>
-              <TGDescription style={styles.subTitle}>
+          <div className='body'>
+            <div className='description'>
+              <TGDescription className='subTitle'>
                 Our team members have backgrounds in both institutional and academic finance and economics with a passion for entrepreneurship and financial technology.
               </TGDescription>
             </div>
-            <div style={styles.detail}>
-              <div style={styles.profileMenu}>
-                <ul style={styles.profileMenuContent}>
+            <div className='detail'>
+              <div className='profileMenu'>
+                <ul className='profileMenuContent'>
                   {
                     teamMembers.map((member, index) => (
-                      <li key={index} style={styles.prifileList}>
-                        <div style={styles.activeIconContainer}>
+                      <li key={index} className='prifileList'>
+                        <div className='activeIconContainer'>
                           <FontAwesome style={{color: 'white', display: this.state.selectedProfileIndex === index ? 'block' : 'none'}} name='long-arrow-right' />
                         </div>
-                        <TGProfileListItem style={styles.activeName} onClick={() => this.onSelectProfile(index)}> {member.name} </TGProfileListItem>
+                        <TGProfileListItem className='activeName' onClick={() => this.onSelectProfile(index)}> {member.name} </TGProfileListItem>
                       </li>
                     ))
                   }
@@ -93,57 +94,6 @@ class Section4 extends Component {
         </div>
       </Content>
     )
-  }
-}
-
-const styles = {
-  content: {
-    flex: 1,
-    flexDirection: 'column',
-    paddingLeft: '23%',
-    paddingTop: 300,
-    paddingRight: '18%'
-  },
-  title: {
-  },
-  body: {
-    marginTop: 50,
-    display: 'flex',
-    flex: 1,
-    flexDirection: 'row'
-  },
-  description: {
-    flex: 1,
-    paddingRight: 200
-  },
-  subTitle: {
-    paddingBottom: 20
-  },
-  detail: {
-    flex: 1.5
-  },
-  profileMenu: {
-    padding: 10,
-    margin: 10
-  },
-  profileMenuContent: {
-    listStyleType: 'none',
-    padding: 0
-  },
-  prifileList: {
-    padding: 15,
-    display: 'flex',
-    flexDirection: 'row'
-  },
-  activeIconContainer: {
-    width: 50
-  },
-  activeIcon: {
-    color: 'white',
-    marginRight: 20
-  },
-  activeName: {
-    flex: 1
   }
 }
 

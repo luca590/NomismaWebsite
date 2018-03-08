@@ -10,12 +10,12 @@ import {
   TGTitle
 } from '../../../../components'
 
-import './style.css'
+import './style.scss'
 
 class Section3 extends Component {
   render () {
     return (
-      <Content url='/assets/img/background_images3.jpg'>
+      <Content id='section3' url='/assets/img/background_images3.jpg'>
         <LogoImage src='/assets/img/white-icon.png' width='100' height='100' />
         <LogoText src='/assets/img/logo.png' width='180' height='35' />
         <ContactBar />

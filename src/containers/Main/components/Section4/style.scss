@@ -1,0 +1,51 @@
+#section4 {
+  .content {
+    flex: 1;
+    flex-direction: column;
+    padding-left: 23%;
+    padding-top: 300px;
+    padding-right: 18%;
+  }
+  .body {
+    margin-top: 50px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+  }
+  .title {
+  
+  }
+  .description {
+    flex: 1;
+    padding-right: 50px;
+  }
+  .subTitle {
+    padding-bottom: 20px;
+  }
+  .detail {
+    flex: 1.5;
+  }
+  .profilMenu {
+    padding: 10px;
+    margin: 10px;
+  }
+  .profileMenuContent {
+    list-style-type: none;
+    padding: 0;
+  }
+  .prifileList {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  .activeIconContainer {
+    width: 50px;
+  }
+  .activeIcon {
+    color: white;
+    margin-right: 20px;
+  }
+  .activeName {
+    flex: 1;
+  }
+}
