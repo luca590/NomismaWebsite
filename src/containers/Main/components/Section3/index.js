@@ -10,6 +10,8 @@ import {
   TGTitle
 } from '../../../../components'
 
+import './style.css'
+
 class Section3 extends Component {
   render () {
     return (
@@ -20,12 +22,12 @@ class Section3 extends Component {
         <Aside>
           <TGMenuItem> White paper </TGMenuItem>
         </Aside>
-        <div style={styles.content}>
-          <div style={styles.title}>
+        <div className='content'>
+          <div className='title'>
             <TGTitle> Abstract </TGTitle>
           </div>
-          <div style={styles.body}>
-            <div style={styles.detail}>
+          <div className='body'>
+            <div className='detail'>
               <TGDetail>
                 Risk sharing is the basic function of finance. Meanwhile, the broad adoption of cryptocurrencies
                 and the expansion of the entire blockchain ecosystem are hampered by the extreme volatility of
@@ -40,51 +42,10 @@ class Section3 extends Component {
               </TGDetail>
             </div>
           </div>
-          <a style={styles.link} href='assets/pdf/SummaryDraft_Feb202018HK.pdf' download='SummaryDraft_Feb202018HK.pdf'>Download </a>
+          <a className='link' href='assets/pdf/SummaryDraft_Feb202018HK.pdf' download='SummaryDraft_Feb202018HK.pdf'>Download </a>
         </div>
       </Content>
     )
-  }
-}
-
-const styles = {
-  content: {
-    flex: 1,
-    flexDirection: 'column',
-    paddingLeft: '23%',
-    paddingTop: 300,
-    paddingRight: '20%'
-  },
-  title: {
-    textAlign: 'center'
-  },
-  body: {
-    display: 'flex',
-    flex: 1,
-    flexDirection: 'row',
-    marginTop: 50
-  },
-  footer: {
-    height: '10%'
-  },
-  description: {
-    flex: 1
-  },
-  subTitle: {
-    paddingBottom: 20
-  },
-  detail: {
-    flex: 2
-  },
-  link: {
-    position: 'absolute',
-    bottom: 30,
-    right: 100,
-    fontFamily: 'Stag-Book',
-    fontWeight: 'normal',
-    fontSize: 20,
-    padding: 10,
-    color: 'white'
   }
 }
 

@@ -1,0 +1,29 @@
+.content {
+  flex: 1;
+  flex-direction: column;
+  padding-left: 23%;
+  padding-top: 300px;
+  padding-right: 20%;
+}
+.title {
+  text-align: center;
+}
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.detail {
+  flex: 2;
+}
+.link {
+  position: absolute;
+  bottom: 30px;
+  right: 100px;
+  font-family: 'Stag-Book';
+  font-weight: normal;
+  font-size: 20px;
+  padding: 10;
+  color: white;
+}
