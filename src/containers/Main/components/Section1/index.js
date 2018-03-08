@@ -9,7 +9,8 @@ import {
   TGDetail,
   TGNote,
   TGMenuItem,
-  TGTitle
+  TGTitle,
+  TopMenu
 } from '../../../../components'
 
 import './style.scss'
@@ -20,6 +21,7 @@ class Section1 extends Component {
       <Content id='section1' url='/assets/img/background_images.jpg'>
         <LogoImage src='/assets/img/white-icon.png' width='100' height='100' />
         <LogoText src='/assets/img/logo.png' width='180' height='35' />
+        <TopMenu />
         <ContactBar />
         <Aside>
           <TGMenuItem> Nomisma </TGMenuItem>

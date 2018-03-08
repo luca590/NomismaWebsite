@@ -27,3 +27,11 @@ export const InsightsLink = styled.a`
   transform: rotate(90deg);
   color: white;
 `
+
+export const TopMenuButton = styled.div`
+  position: absolute;
+  top: 80px;
+  right: 70px;
+  width: 50px;
+  height: 50px;
+`
