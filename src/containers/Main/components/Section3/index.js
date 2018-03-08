@@ -53,24 +53,26 @@ const styles = {
   content: {
     flex: 1,
     flexDirection: 'column',
-    paddingTop: 200,
-    paddingRight: 400,
-    paddingLeft: 400
+    paddingLeft: '23%',
+    paddingTop: 300,
+    paddingRight: '20%'
   },
   title: {
-    padding: 50
+    // padding: 50
+    textAlign: 'center'
   },
   body: {
     display: 'flex',
     flex: 1,
-    flexDirection: 'row'
+    flexDirection: 'row',
+    marginTop: 50
   },
   footer: {
     height: '10%'
   },
   description: {
     flex: 1,
-    paddingRight: 50
+    // paddingRight: 50
   },
   subTitle: {
     paddingBottom: 20

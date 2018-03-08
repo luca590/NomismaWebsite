@@ -26,7 +26,7 @@ class Section1 extends Component {
         </Aside>
         <div style={styles.content}>
           <div style={styles.title}>
-            <TGTitle> Risk sharing revolutionizes <br /> the cryptocurrency space </TGTitle>
+            <TGTitle> Risk sharing revolutionizes the cryptocurrency space </TGTitle>
           </div>
           <div style={styles.body}>
             <div style={styles.description}>
@@ -54,14 +54,15 @@ const styles = {
   content: {
     flex: 1,
     flexDirection: 'column',
-    paddingLeft: 300,
-    paddingTop: 200,
-    paddingRight: 50
+    paddingLeft: '23%',
+    paddingTop: 300,
+    paddingRight: '18%'
   },
   title: {
-    padding: 50
+    // padding: '10%'
   },
   body: {
+    marginTop: 50,
     display: 'flex',
     flex: 1,
     flexDirection: 'row'
@@ -75,7 +76,7 @@ const styles = {
   },
   detail: {
     flex: 2,
-    paddingRight: 200
+    // paddingRight: 200
   }
 }
 
