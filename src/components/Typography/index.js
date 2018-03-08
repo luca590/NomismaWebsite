@@ -6,6 +6,7 @@ export const TGTitle = styled.h1`
   font-family: 'Stag-Book';
   font-size: 54pt;
   font-weight: 500;
+  letter-spacing: 2px;
   ${props => props.italic && css`
     font-style: italic;
   `}

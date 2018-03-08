@@ -103,21 +103,22 @@ const styles = {
   content: {
     flex: 1,
     flexDirection: 'column',
-    paddingLeft: 300,
-    paddingTop: 200,
-    paddingRight: 50
+    paddingLeft: '23%',
+    paddingTop: 300,
+    paddingRight: '18%'
   },
   title: {
-    padding: 50
+    // padding: 50
   },
   body: {
+    marginTop: 50,
     display: 'flex',
     flex: 1,
     flexDirection: 'row'
   },
   description: {
     flex: 1,
-    paddingRight: 150
+    paddingRight: 200
   },
   subTitle: {
     paddingBottom: 20
