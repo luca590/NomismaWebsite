@@ -13,9 +13,6 @@
     flex: 1;
     flex-direction: row;
   }
-  .title {
-  
-  }
   .description {
     flex: 1;
     padding-right: 50px;
@@ -52,10 +49,16 @@
 
   @media (max-width: 768px) {
     .content {
-      padding: 150px 70px 100px 70px;
+      padding: 150px 50px 100px 70px;
     }
     .body {
       flex-direction: column;
+    }
+    .title {
+      text-align: center;
+    }
+    .description {
+      padding-right: 0;
     }
   }
 }
