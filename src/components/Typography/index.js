@@ -68,12 +68,13 @@ export const TGDetail = styled.h3`
   }
 `
 
-export const TGMenuItem = styled.h1`
+export const TGMenuItem = styled.a`
   margin: 0;
-  color: white;
   font-family: 'Stag-Light';
   font-size: 15pt;
   letter-spacing: 2.5px;
+  color: white;
+  text-decoration: none;
   ${props => props.italic && css`
     font-style: italic;
   `}
