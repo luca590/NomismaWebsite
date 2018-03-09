@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import {
   Aside,
   Content,
-  LogoImage,
-  LogoText,
   TGMenuItem,
   TGTitle,
   TGDescription,
@@ -58,8 +56,6 @@ class Section4 extends Component {
   render () {
     return (
       <Content id='section4' url='/assets/img/background_images4.jpg'>
-        <LogoImage src='/assets/img/white-icon.png' width='100' height='100' />
-        <LogoText src='/assets/img/logo.png' width='180' height='35' />
         <ContactBar />
         <Aside>
           <TGMenuItem> Team </TGMenuItem>
