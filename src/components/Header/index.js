@@ -30,9 +30,11 @@ class Header extends React.Component {
 }
 
 const Wrapper = styled.header`
-  position: absolute;
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
   @media (max-width: 768px) {
     background-color: black;
   }

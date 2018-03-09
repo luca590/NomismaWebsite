@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { TopMenuButton, TGMenuItem } from '..'
+import { TGMenuItem } from '../'
 import FontAwesome from 'react-fontawesome'
 
 class TopMenu extends React.Component {
@@ -18,7 +18,7 @@ class TopMenu extends React.Component {
           <TGMenuItem style={styles.menuItem}> Nomisma </TGMenuItem>
           <TGMenuItem style={styles.menuItem}> White paper </TGMenuItem>
           <TGMenuItem style={styles.menuItem}> Team </TGMenuItem>
-          </div>
+        </div>
       </div>
     )
   }
@@ -69,7 +69,7 @@ const styles = {
     padding: 50
   },
   menuItem: {
-    marginTop: 30,
+    marginTop: 30
   }
 }
 

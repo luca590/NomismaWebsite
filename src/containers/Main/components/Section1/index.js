@@ -3,15 +3,11 @@ import {
   Aside,
   ContactBar,
   Content,
-  LogoImage,
-  LogoText,
-  Header,
   TGDescription,
   TGDetail,
   TGNote,
   TGMenuItem,
-  TGTitle,
-  TopMenu
+  TGTitle
 } from '../../../../components'
 
 import './style.scss'
@@ -20,7 +16,6 @@ class Section1 extends Component {
   render () {
     return (
       <Content id='section1' url='/assets/img/background_images.jpg'>
-        <Header />
         <ContactBar />
         <Aside>
           <TGMenuItem> Nomisma </TGMenuItem>

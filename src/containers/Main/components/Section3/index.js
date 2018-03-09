@@ -3,9 +3,6 @@ import {
   Aside,
   ContactBar,
   Content,
-  Header,
-  LogoImage,
-  LogoText,
   TGDetail,
   TGMenuItem,
   TGTitle
@@ -17,7 +14,6 @@ class Section3 extends Component {
   render () {
     return (
       <Content id='section3' url='/assets/img/background_images3.jpg'>
-        <Header />
         <ContactBar />
         <Aside>
           <TGMenuItem> White paper </TGMenuItem>
