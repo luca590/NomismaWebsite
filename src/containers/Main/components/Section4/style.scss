@@ -4,6 +4,7 @@
     flex-direction: column;
     padding-left: 23%;
     padding-top: 300px;
+    padding-bottom: 200px;
     padding-right: 18%;
   }
   .body {
@@ -47,5 +48,14 @@
   }
   .activeName {
     flex: 1;
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      padding: 150px 70px 100px 70px;
+    }
+    .body {
+      flex-direction: column;
+    }
   }
 }
