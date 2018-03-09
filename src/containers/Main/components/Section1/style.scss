@@ -2,25 +2,13 @@
   .content {
     flex: 1;
     flex-direction: column;
-    padding-left: 23%;
-    padding-top: 300px;
-    padding-right: 18%;
-    padding-bottom: 200px;
-    @media (max-width: 768px) {
-      padding-top: 150px;
-      padding-left: 70px;
-      padding-right: 20px;
-      padding-bottom: 100px;
-    }
+    padding: 300px 18% 200px 23%;
   }
   .body {
     margin-top: 50px;
     display: flex;
     flex: 1;
     flex-direction: row;
-    @media (max-width: 768px) {
-      flex-direction: column;
-    }
   }
   .title {
   
@@ -35,5 +23,14 @@
   }
   .detail {
     flex: 2;
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      padding: 150px 70px 100px 50px;
+    }
+    .body {
+      flex-direction: column;
+    }
   }
 }
