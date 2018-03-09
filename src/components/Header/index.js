@@ -13,7 +13,7 @@ class Header extends React.Component {
   render () {
     const { isOpen } = this.state
     return (
-      <Wrapper id="header">
+      <Wrapper id='header'>
         <Content>
           <LogoImage src='/assets/img/white-icon.png' />
           <LogoText src='/assets/img/logo.png' />
@@ -22,7 +22,7 @@ class Header extends React.Component {
           </MenuButton>
         </Content>
         {
-          isOpen && <TopMenu onClose={() => { this.setState({ isOpen: false })}} />
+          isOpen && <TopMenu onClose={() => { this.setState({ isOpen: false }) }} />
         }
       </Wrapper>
     )

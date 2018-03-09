@@ -10,14 +10,14 @@ class TopMenu extends React.Component {
         <TopBar>
           <LogoImage src='/assets/img/white-icon.png' />
           <LogoText src='/assets/img/logo.png' />
-          <CloseButton  onClick={this.props.onClose}>
+          <CloseButton onClick={this.props.onClose}>
             <FontAwesome size='2x' style={{color: 'white'}} name='close' />
           </CloseButton>
         </TopBar>
         <div style={styles.wrapper}>
-          <TGMenuItem style={styles.menuItem} href="#section1" onClick={this.props.onClose}> Nomisma </TGMenuItem>
-          <TGMenuItem style={styles.menuItem} href="#section3" onClick={this.props.onClose}> White paper </TGMenuItem>
-          <TGMenuItem style={styles.menuItem} href="#section4" onClick={this.props.onClose}> Team </TGMenuItem>
+          <TGMenuItem style={styles.menuItem} href='#section1' onClick={this.props.onClose}> Nomisma </TGMenuItem>
+          <TGMenuItem style={styles.menuItem} href='#section3' onClick={this.props.onClose}> White paper </TGMenuItem>
+          <TGMenuItem style={styles.menuItem} href='#section4' onClick={this.props.onClose}> Team </TGMenuItem>
         </div>
       </div>
     )

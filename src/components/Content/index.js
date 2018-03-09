@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
 export class Content extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.imageRate = 0.625
   }
 
-  componentDidMount() {
+  componentDidMount () {
     window.addEventListener('resize', this.onChangeDimensions)
     const self = this
     const image = new Image()
@@ -17,7 +17,7 @@ export class Content extends Component {
     }
   }
 
-  componentWillUnmount() {
+  componentWillUnmount () {
     window.removeEventListener('resize', this.onChangeDimensions)
   }
 
@@ -32,7 +32,7 @@ export class Content extends Component {
     }
   }
 
-  render() {
+  render () {
     return (
       <div id={this.props.id}>
         {this.props.children}
