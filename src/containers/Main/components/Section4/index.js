@@ -49,8 +49,10 @@ class Section4 extends Component {
       selectedProfileIndex: 0
     }
   }
-  onSelectProfile (index) {
+  onHoverProfile (index) {
     this.setState({selectedProfileIndex: index})
+  }
+  onClickProfile (index) {
     window.open(teamMembers[index].link, '_blank')
   }
   render () {
@@ -79,7 +81,11 @@ class Section4 extends Component {
                         <div className='activeIconContainer'>
                           <FontAwesome style={{color: 'white', display: this.state.selectedProfileIndex === index ? 'block' : 'none'}} name='long-arrow-right' />
                         </div>
-                        <TGProfileListItem className='activeName' onClick={() => this.onSelectProfile(index)}> {member.name} </TGProfileListItem>
+                        <TGProfileListItem
+                          onMouseEnter={() => this.onHoverProfile(index)}
+                          onClick={() => this.onClickProfile(index)}>
+                          {member.name}
+                        </TGProfileListItem>
                       </li>
                     ))
                   }
