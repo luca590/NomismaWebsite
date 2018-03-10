@@ -4,8 +4,7 @@ import {
   ContactBar,
   Content,
   TGDetail,
-  TGMenuItem,
-  TGTitle
+  TGMenuItem
 } from '../../../../components'
 
 import './style.scss'
@@ -19,9 +18,6 @@ class Section3 extends Component {
           <TGMenuItem> White paper </TGMenuItem>
         </Aside>
         <div className='content'>
-          <div className='title'>
-            {/* <TGTitle> Abstract </TGTitle> */}
-          </div>
           <div className='body'>
             <div className='detail'>
               <TGDetail>
