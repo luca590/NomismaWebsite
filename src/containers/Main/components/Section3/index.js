@@ -20,7 +20,7 @@ class Section3 extends Component {
         </Aside>
         <div className='content'>
           <div className='title'>
-            <TGTitle> Abstract </TGTitle>
+            {/* <TGTitle> Abstract </TGTitle> */}
           </div>
           <div className='body'>
             <div className='detail'>
