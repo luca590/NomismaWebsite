@@ -35,6 +35,9 @@
     padding: 10px;
     display: flex;
     flex-direction: row;
+    &:hover {
+      animation: flash 1s linear infinite;
+    }
   }
   .activeIconContainer {
     width: 50px;
@@ -45,6 +48,12 @@
   }
   .activeName {
     flex: 1;
+  }
+  
+  @keyframes flash {
+    50% {
+      opacity: 0;
+    }
   }
 
   @media (max-width: 768px) {
