@@ -17,8 +17,8 @@ class Section0 extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      car: [],
-      bus: []
+      car: 0,
+      bus: 0
     }
   }
 
@@ -51,10 +51,7 @@ class Section0 extends Component {
     }
     return (
       <Content id='section0' url='/assets/img/background_images.jpg'>
-        <ContactBar />
-        <Aside>
-          <TGMenuItem> Nomisma </TGMenuItem>
-        </Aside>
+        
         <div className='content'>
           <RTChart
             fields={['Car','Bus']}
