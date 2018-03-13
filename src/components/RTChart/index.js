@@ -1,130 +1,124 @@
-import React from 'react';
+import React from 'react'
 import PropTypes from 'prop-types'
 import createReactClass from 'create-react-class'
-import ReactDOM from 'react-dom';
-import c3 from 'c3';
-import merge from 'deepmerge';
-import loadHistoryData from './loadHistoricalData';
-import filterReactDomProps from 'filter-react-dom-props';
+import c3 from 'c3'
+import merge from 'deepmerge'
+import loadHistoryData from './loadHistoricalData'
+import filterReactDomProps from 'filter-react-dom-props'
 import './style.scss'
-const isDate = (key) => key === "date";
-const isList = (data) => data && data.length;
-const emptyList = (list) => !isList(list) || list.length == 0;
-const hasDataProperty = (data) => data.hasOwnProperty('date');
+const isDate = (key) => key === 'date'
+const isList = (data) => data && data.length
+const emptyList = (list) => !isList(list) || list.length === 0
+const hasDataProperty = (data) => data.hasOwnProperty('date')
 
 const updateHistoricalData = (props, nextProps) => {
-  var lastData = props.initialData;
-  var nextData = nextProps.initialData;
+  var lastData = props.initialData
+  var nextData = nextProps.initialData
 
-  if (!lastData && !nextData) return false;
+  if (!lastData && !nextData) return false
 
-  if (emptyList(nextData)) return false;
+  if (emptyList(nextData)) return false
 
   if (emptyList(lastData) && !emptyList(nextData)) {
-    return true;
+    return true
   }
 
-  return nextData.length != lastData.length;
+  return nextData.length !== lastData.length
 }
 
 var RTChart = createReactClass({
 
-  componentDidMount: function() {
-
-    var { initialData, maxValues } = this.props;
-
-    this.limit = maxValues || 30;
-    this.count = isList(initialData) ? initialData.length : 0;
-
-    this.initChart(this.props);
+  componentDidMount: function () {
+    var { initialData, maxValues } = this.props
+    this.limit = maxValues || 30
+    this.count = isList(initialData) ? initialData.length : 0
+    this.initChart(this.props)
   },
 
-  getInitialState: function() {
+  getInitialState: function () {
     return {
       chart: null
-    };
+    }
   },
 
-  unload() {
+  unload () {
     this.state.chart.unload({
       ids: this.props.fields
-    });
+    })
   },
 
-  resetChart: function() {
-    this.unload();
-    this.initChart(this.props);
+  resetChart: function () {
+    this.unload()
+    this.initChart(this.props)
   },
 
-  componentWillReceiveProps: function(nextProps) {
-
+  componentWillReceiveProps: function (nextProps) {
     if (updateHistoricalData(this.props, nextProps)) {
-      this.initChart(nextProps);
-      return;
+      this.initChart(nextProps)
+      return
     }
 
-    if (!this.state.chart) return;
-    if (!nextProps.data) return;
+    if (!this.state.chart) return
+    if (!nextProps.data) return
 
     if (Object.keys(nextProps.data).length < this.props.fields.length) {
-      console.warn(`Values has a length of ${nextProps.values.length} but must be the same as fields: ${this.props.fields.length}`);
+      console.warn(`Values has a length of ${nextProps.values.length} but must be the same as fields: ${this.props.fields.length}`)
     }
-
 
     if (nextProps.reset) {
-      this.resetChart(nextProps);
+      this.resetChart(nextProps)
     }
 
-    var columns = loadHistoryData([nextProps.data], nextProps.fields, this.limit);
+    var columns = loadHistoryData([nextProps.data], nextProps.fields, this.limit)
     var args = merge({
-                columns: columns,
-                duration: 400
-              }, (this.props.flow || {}));
+      columns: columns,
+      duration: 400
+    }, (this.props.flow || {}))
 
-    if (this.count <= this.limit) this.count++;
+    if (this.count <= this.limit) this.count++
 
-    if (this.count < this.limit) args['length'] = 0;
+    if (this.count < this.limit) args['length'] = 0
 
-    this.state.chart.flow(args);
+    this.state.chart.flow(args)
   },
 
-  render: function() {
-    return <div {...filterReactDomProps(this.props)} ref='chart'/>
+  render: function () {
+    return <div {...filterReactDomProps(this.props)} ref='chart' />
   },
 
-  initChart: function(props) {
+  initChart: function (props) {
     if (!props.fields) {
-      throw new Error("prop type fields are missing. fields={['field',..]}");
+      throw new Error('prop type fields are missing. fields={["field",..]}')
     }
 
     if (this.state.chart) {
-      this.unload();
+      this.unload()
     }
 
-    var { initialData, chart, fields } = props;
+    var { initialData, chart, fields } = props
 
-    var defaultColumns = [['x']];
+    var defaultColumns = [['x']]
 
-    props.fields.forEach((f) => defaultColumns.push([f]));
+    props.fields.forEach((f) => defaultColumns.push([f]))
 
-    var chart_temp = merge({
+    var chartTemp = merge({
       axis: {
         x: {
           type: 'timeseries',
           tick: {
-            format: '%H:%M:%S',
+            format: '%H:%M:%S'
           }
         }
       }
-    }, (chart || {}));
+    }, (chart || {}))
 
-    var columns = !emptyList(initialData) ? loadHistoryData(initialData, fields, this.limit) : defaultColumns;
-    var chart_temp = merge({
+    var columns = !emptyList(initialData) ? loadHistoryData(initialData, fields, this.limit) : defaultColumns
+    chartTemp = merge({
       axis: {
         x: {
           type: 'timeseries',
           tick: {
-            format: '%H:%M:%S',
+            format: '%H:%M:%S'
           }
         }
       },
@@ -132,16 +126,16 @@ var RTChart = createReactClass({
         x: 'x',
         columns: columns
       }
-    }, (chart || {}));
+    }, (chart || {}))
 
-    chart_temp.bindto = this.refs.chart;
+    chartTemp.bindto = this.refs.chart
 
-    var chart = c3.generate(chart_temp);
+    var chart = c3.generate(chartTemp)
 
     this.setState({
       chart: chart,
       initialData: initialData
-    });
+    })
   },
 
   propTypes: {
@@ -150,6 +144,6 @@ var RTChart = createReactClass({
     fields: PropTypes.array.isRequired,
     maxValues: PropTypes.number
   }
-});
+})
 
-module.exports = RTChart;
+module.exports = RTChart
