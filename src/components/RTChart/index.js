@@ -6,7 +6,7 @@ import c3 from 'c3';
 import merge from 'deepmerge';
 import loadHistoryData from './loadHistoricalData';
 import filterReactDomProps from 'filter-react-dom-props';
-
+import './style.scss'
 const isDate = (key) => key === "date";
 const isList = (data) => data && data.length;
 const emptyList = (list) => !isList(list) || list.length == 0;
