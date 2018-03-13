@@ -7,9 +7,9 @@ import {
   TGDetail,
   TGNote,
   TGMenuItem,
-  TGTitle
+  TGTitle,
+  RTChart
 } from '../../../../components'
-import RTChart from './rt-chart'
 
 import './style.scss'
 
@@ -23,7 +23,7 @@ class Section0 extends Component {
   }
 
   componentDidMount() {
-    setInterval(() => this.forceUpdate(), 200);
+    setInterval(() => this.forceUpdate(), 1200);
   }
 
   forceUpdate () {
