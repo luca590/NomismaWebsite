@@ -126,6 +126,9 @@ var RTChart = createReactClass({
         x: 'x',
         columns: columns,
         types: types
+      },
+      size: {
+        height: 600
       }
     }, (chart || {}))
 
