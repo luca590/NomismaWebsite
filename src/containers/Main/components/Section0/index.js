@@ -64,8 +64,8 @@ class Section0 extends Component {
             fields={['BTC', 'ETH', 'XRP', 'BCH', 'ADA', 'LTC', 'XEM', 'XLM', 'MIOTA', 'DASH', 'NEO']}
             types={{'BTC': 'area-spline', 'ETH': 'area-spline', 'XRP': 'area-spline', 'BCH': 'area-spline', 'ADA': 'area-spline', 'LTC': 'area-spline', 'XEM': 'area-spline', 'XLM': 'area-spline', 'MIOTA': 'area-spline', 'DASH': 'area-spline', 'NEO': 'area-spline'}}
             data={data1}
-            maxValues={50}
-            flow={flow}
+            maxValues={20}
+            // flow={flow}
             height={500}
           />
         </div>
@@ -74,8 +74,8 @@ class Section0 extends Component {
             fields={['EQUAL_WEIGHT', 'TOP6']}
             types={{'EQUAL_WEIGHT': 'spline', 'TOP6': 'spline'}}
             data={data2}
-            maxValues={50}
-            flow={flow}
+            maxValues={20}
+            // flow={flow}
             height={500}
           />
         </div>
