@@ -1,13 +1,6 @@
 import React, { Component } from 'react'
 import {
-  Aside,
-  ContactBar,
   Content,
-  TGDescription,
-  TGDetail,
-  TGNote,
-  TGMenuItem,
-  TGTitle,
   RTChart
 } from '../../../../components'
 
@@ -22,8 +15,8 @@ class Section0 extends Component {
     }
   }
 
-  componentDidMount() {
-    setInterval(() => this.updateChartData(), 200);
+  componentDidMount () {
+    setInterval(() => this.updateChartData(), 500)
   }
 
   updateChartData () {
@@ -40,16 +33,16 @@ class Section0 extends Component {
       Bus: this.state.bus
     }
     var flow = {
-      duration: 1000
+      duration: 200
     }
     return (
-      <Content id='section0' url='/assets/img/background_images.jpg'>
+      <Content id='section0'>
         <div className='content'>
           <RTChart
-            fields={['Car','Bus']}
+            fields={['Car', 'Bus']}
             data={data}
-            maxValues={100}
-            // flow={flow}
+            maxValues={50}
+            flow={flow}
           />
         </div>
       </Content>
