@@ -32,7 +32,7 @@ class Section0 extends Component {
       Bus: this.state.bus
     }
     var flow = {
-      duration: 200
+      duration: 100
     }
     return (
       <Content id='section0'>
@@ -45,6 +45,10 @@ class Section0 extends Component {
             flow={flow}
           />
         </div>
+        <div id='epoch-chart' className='content'>
+        <RTChart
+            fields={['Car', 'Bus']}
+            types={{'Car': 'spline', 'Bus': 'spline'}}
             data={data}
             maxValues={50}
             flow={flow}
