@@ -19,8 +19,11 @@ export class StaticTable extends Component {
     const data = {}
     ROWS.forEach((ROW) => {
       data[ROW] = {}
-      COLS.forEach((COL) => {
+      COLS.forEach((COL, index) => {
         data[ROW][COL] = (Math.random() * 10).toFixed(2)
+        if (index < 2) {
+          data[ROW][COL] = `${data[ROW][COL]}%`
+        }
       })
     })
     this.exData = data
@@ -29,7 +32,7 @@ export class StaticTable extends Component {
 
   render () {
     return (
-      <table>
+      <table id="static-table">
         <thead>
           <tr>
             <td>TICKER</td>
@@ -53,6 +56,28 @@ export class StaticTable extends Component {
               </tr>
             ))
           }
+          <tr className="row-total">
+            <td>
+              EQUAL WEIGHT<br />
+              CRYPTO PORTFOLIO
+            </td>
+            {
+              COLS.map(COL => (
+                <td key={`SUM1-${COL}`}><br />{ this.state.data[ROWS[0]][COL] }</td>
+              ))
+            }
+          </tr>
+          <tr className="row-top6">
+            <td>
+              TOP6 CRYPTO<br />
+              PORTFOLIO
+            </td>
+            {
+              COLS.map(COL => (
+                <td key={`SUM2-${COL}`}><br />{ this.state.data[ROWS[1]][COL] }</td>
+              ))
+            }
+          </tr>
         </tbody>
       </table>
     )
