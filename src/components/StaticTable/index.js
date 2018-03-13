@@ -32,7 +32,7 @@ export class StaticTable extends Component {
 
   render () {
     return (
-      <table id="static-table">
+      <table id='static-table'>
         <thead>
           <tr>
             <td>TICKER</td>
@@ -56,7 +56,7 @@ export class StaticTable extends Component {
               </tr>
             ))
           }
-          <tr className="row-total">
+          <tr className='row-total'>
             <td>
               EQUAL WEIGHT<br />
               CRYPTO PORTFOLIO
@@ -67,7 +67,7 @@ export class StaticTable extends Component {
               ))
             }
           </tr>
-          <tr className="row-top6">
+          <tr className='row-top6'>
             <td>
               TOP6 CRYPTO<br />
               PORTFOLIO
