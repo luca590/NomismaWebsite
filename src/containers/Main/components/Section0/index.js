@@ -20,16 +20,39 @@ class Section0 extends Component {
 
   updateChartData () {
     this.setState({
-      car: Math.random() * 1000,
-      bus: Math.random() * 1000
+      BTC: Math.random() * 1000,
+      ETH: Math.random() * 1000,
+      XRP: Math.random() * 1000,
+      BCH: Math.random() * 1000,
+      ADA: Math.random() * 1000,
+      LTC: Math.random() * 1000,
+      XEM: Math.random() * 1000,
+      XLM: Math.random() * 1000,
+      MIOTA: Math.random() * 1000,
+      DASH: Math.random() * 1000,
+      NEO: Math.random() * 1000,
     })
   }
 
   render () {
-    var data = {
+    var data1 = {
       date: new Date(),
-      Car: this.state.car,
-      Bus: this.state.bus
+      ETH: this.state.ETH,
+      BTC: this.state.BTC,
+      XRP: this.state.XRP,
+      BCH: this.state.BCH,
+      ADA: this.state.ADA,
+      LTC: this.state.LTC,
+      XEM: this.state.XEM,
+      XLM: this.state.XLM,
+      MIOTA: this.state.MIOTA,
+      DASH: this.state.DASH,
+      NEO: this.state.NEO,
+    }
+    var data2 = {
+      date: new Date(),
+      EQUAL_WEIGHT: this.state.ETH,
+      TOP6: this.state.BTC
     }
     var flow = {
       duration: 100
