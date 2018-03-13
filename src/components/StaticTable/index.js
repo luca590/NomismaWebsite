@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
-import { Content } from '../../../../components'
 
 import './style.scss'
 
 const ROWS = ['BTC', 'ETH', 'XRP', 'BCH', 'ADA', 'LTC', 'XEM', 'XLM', 'MIOTA', 'DASH', 'NEO', 'XMR', 'BTG', 'QTUM', 'XRB', 'JPY', 'EUR', 'AUD', 'CHF', 'USD']
 const COLS = ['MeanDailyLogret', 'AnnualizedVol', 'Kurtosis', 'Skewness', 'MaxDailyPercent', 'MinDailyPercent', 'Sharpe Ratio']
 
-class StaticTable extends Component {
+export class StaticTable extends Component {
   constructor (props) {
     super(props)
     this.exData = null
