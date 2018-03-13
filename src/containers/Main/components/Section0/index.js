@@ -23,13 +23,13 @@ class Section0 extends Component {
   }
 
   componentDidMount() {
-    setInterval(() => this.updateChartData(), 1000);
+    setInterval(() => this.updateChartData(), 200);
   }
 
   updateChartData () {
     this.setState({
-      car: 60,
-      bus: 30
+      car: Math.random() * 1000,
+      bus: Math.random() * 1000
     })
   }
 
@@ -44,12 +44,11 @@ class Section0 extends Component {
     }
     return (
       <Content id='section0' url='/assets/img/background_images.jpg'>
-        
         <div className='content'>
           <RTChart
             fields={['Car','Bus']}
             data={data}
-            maxValues={10}
+            maxValues={100}
             // flow={flow}
           />
         </div>
