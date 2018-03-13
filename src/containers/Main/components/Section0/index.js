@@ -66,6 +66,7 @@ class Section0 extends Component {
             data={data1}
             maxValues={50}
             flow={flow}
+            height={500}
           />
         </div>
         <div id='epoch-chart' className='content'>
@@ -75,6 +76,7 @@ class Section0 extends Component {
             data={data2}
             maxValues={50}
             flow={flow}
+            height={500}
           />
         </div>
       </Content>

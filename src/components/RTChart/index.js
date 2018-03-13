@@ -95,7 +95,7 @@ var RTChart = createReactClass({
       this.unload()
     }
 
-    var { initialData, chart, fields, types } = props
+    var { initialData, chart, fields, types, height } = props
 
     var defaultColumns = [['x']]
 
@@ -128,7 +128,7 @@ var RTChart = createReactClass({
         types: types
       },
       size: {
-        height: 600
+        height: height
       }
     }, (chart || {}))
 
