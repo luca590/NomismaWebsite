@@ -3,7 +3,6 @@ import {
   Content,
   RTChart
 } from '../../../../components'
-
 import './style.scss'
 
 class Section0 extends Component {
@@ -40,6 +39,12 @@ class Section0 extends Component {
         <div className='content'>
           <RTChart
             fields={['Car', 'Bus']}
+            types={{'Car': 'area-spline', 'Bus': 'area-spline'}}
+            data={data}
+            maxValues={50}
+            flow={flow}
+          />
+        </div>
             data={data}
             maxValues={50}
             flow={flow}
