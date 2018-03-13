@@ -61,18 +61,18 @@ class Section0 extends Component {
       <Content id='section0'>
         <div className='content'>
           <RTChart
-            fields={['Car', 'Bus']}
-            types={{'Car': 'area-spline', 'Bus': 'area-spline'}}
-            data={data}
+            fields={['BTC', 'ETH', 'XRP', 'BCH', 'ADA', 'LTC', 'XEM', 'XLM', 'MIOTA', 'DASH', 'NEO']}
+            types={{'BTC': 'area-spline', 'ETH': 'area-spline', 'XRP': 'area-spline', 'BCH': 'area-spline', 'ADA': 'area-spline', 'LTC': 'area-spline', 'XEM': 'area-spline', 'XLM': 'area-spline', 'MIOTA': 'area-spline', 'DASH': 'area-spline', 'NEO': 'area-spline'}}
+            data={data1}
             maxValues={50}
             flow={flow}
           />
         </div>
         <div id='epoch-chart' className='content'>
         <RTChart
-            fields={['Car', 'Bus']}
-            types={{'Car': 'spline', 'Bus': 'spline'}}
-            data={data}
+            fields={['EQUAL_WEIGHT', 'TOP6']}
+            types={{'EQUAL_WEIGHT': 'spline', 'TOP6': 'spline'}}
+            data={data2}
             maxValues={50}
             flow={flow}
           />
