@@ -30,34 +30,32 @@ class StaticTable extends Component {
 
   render () {
     return (
-      <Content id='live-table'>
-        <table>
-          <thead>
-            <tr>
-              <td>TICKER</td>
-              {
-                COLS.map(COL => (
-                  <td key={COL}>{ COL }</td>
-                ))
-              }
-            </tr>
-          </thead>
-          <tbody>
+      <table>
+        <thead>
+          <tr>
+            <td>TICKER</td>
             {
-              ROWS.map(ROW => (
-                <tr key={ROW}>
-                  <td>{ ROW }</td>
-                  {
-                    COLS.map(COL => (
-                      <td key={`${ROW}-${COL}`}>{ this.state.data[ROW][COL] }</td>
-                    ))
-                  }
-                </tr>
+              COLS.map(COL => (
+                <td key={COL}>{ COL }</td>
               ))
             }
-          </tbody>
-        </table>
-      </Content>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            ROWS.map(ROW => (
+              <tr key={ROW}>
+                <td>{ ROW }</td>
+                {
+                  COLS.map(COL => (
+                    <td key={`${ROW}-${COL}`}>{ this.state.data[ROW][COL] }</td>
+                  ))
+                }
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
     )
   }
 }
