@@ -9,12 +9,46 @@ import {
   TGMenuItem,
   TGTitle
 } from '../../../../components'
-import RTChart from 'react-rt-chart'
+import RTChart from './rt-chart'
 
 import './style.scss'
 
 class Section0 extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      car: [],
+      bus: []
+    }
+  }
+
+  componentDidMount() {
+    setInterval(() => this.forceUpdate(), 200);
+  }
+
+  forceUpdate () {
+    this.setState({
+      car: 60,
+      bus: 30
+    })
+  }
+
+  getRandomValue () {
+    this.setState({
+      car: 30,
+      bus: 50
+    })
+  }
+
   render () {
+    var data = {
+      date: new Date(),
+      Car: this.state.car,
+      Bus: this.state.bus
+    }
+    var flow = {
+      duration: 1000
+    }
     return (
       <Content id='section0' url='/assets/img/background_images.jpg'>
         <ContactBar />
