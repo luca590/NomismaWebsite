@@ -23,20 +23,13 @@ class Section0 extends Component {
   }
 
   componentDidMount() {
-    setInterval(() => this.forceUpdate(), 1200);
+    setInterval(() => this.updateChartData(), 1000);
   }
 
-  forceUpdate () {
+  updateChartData () {
     this.setState({
       car: 60,
       bus: 30
-    })
-  }
-
-  getRandomValue () {
-    this.setState({
-      car: 30,
-      bus: 50
     })
   }
 
