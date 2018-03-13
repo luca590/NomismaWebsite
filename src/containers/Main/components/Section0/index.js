@@ -30,7 +30,7 @@ class Section0 extends Component {
       XLM: Math.random() * 1000,
       MIOTA: Math.random() * 1000,
       DASH: Math.random() * 1000,
-      NEO: Math.random() * 1000,
+      NEO: Math.random() * 1000
     })
   }
 
@@ -47,7 +47,7 @@ class Section0 extends Component {
       XLM: this.state.XLM,
       MIOTA: this.state.MIOTA,
       DASH: this.state.DASH,
-      NEO: this.state.NEO,
+      NEO: this.state.NEO
     }
     var data2 = {
       date: new Date(),
@@ -69,7 +69,7 @@ class Section0 extends Component {
           />
         </div>
         <div id='epoch-chart' className='content'>
-        <RTChart
+          <RTChart
             fields={['EQUAL_WEIGHT', 'TOP6']}
             types={{'EQUAL_WEIGHT': 'spline', 'TOP6': 'spline'}}
             data={data2}
