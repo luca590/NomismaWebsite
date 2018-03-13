@@ -1,0 +1,16 @@
+#section0 {
+  .content {
+    flex: 1;
+    flex-direction: column;
+    padding: 200px 50px 50px 50px;
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      padding: 150px 50px 100px 70px;
+    }
+    .body {
+      flex-direction: column;
+    }
+  }
+}
