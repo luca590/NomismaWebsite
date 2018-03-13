@@ -10,9 +10,9 @@ class Main extends Component {
   render () {
     return (
       <div>
+        <Section0 />
         <StaticTable />
         <DynamicTable />
-        <Section0 />
         <Section1 />
         <Section2 />
         <Section3 />

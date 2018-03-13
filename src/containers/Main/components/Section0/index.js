@@ -54,9 +54,9 @@ class Section0 extends Component {
       EQUAL_WEIGHT: this.state.ETH,
       TOP6: this.state.BTC
     }
-    var flow = {
-      duration: 100
-    }
+    // var flow = {
+    //   duration: 100
+    // }
     return (
       <Content id='section0'>
         <div className='content'>
