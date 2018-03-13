@@ -1,0 +1,36 @@
+#section0 {
+  .content {
+    flex: 1;
+    flex-direction: column;
+    padding: 300px 18% 200px 23%;
+  }
+  .body {
+    margin-top: 50px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+  }
+  .title {
+    text-align: center;
+  }
+  .description {
+    flex: 1;
+    padding-right: 50px;
+    padding-bottom: 50px;
+  }
+  .subTitle {
+    padding-bottom: 20px;
+  }
+  .detail {
+    flex: 2;
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      padding: 150px 50px 100px 70px;
+    }
+    .body {
+      flex-direction: column;
+    }
+  }
+}
