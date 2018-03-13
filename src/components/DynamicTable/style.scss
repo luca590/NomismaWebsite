@@ -1,3 +1,8 @@
+.table-container {
+  overflow-x: scroll;
+  margin: 20px auto;
+  width: 90%;
+}
 #dynamic-table {
   border-collapse: collapse;
   border: 1px solid #AAA;

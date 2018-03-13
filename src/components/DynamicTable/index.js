@@ -45,32 +45,34 @@ export class DynamicTable extends Component {
 
   render () {
     return (
-      <table id='dynamic-table'>
-        <thead>
-          <tr>
-            <td></td>
+      <div class="table-container">
+        <table id='dynamic-table'>
+          <thead>
+            <tr>
+              <td></td>
+              {
+                COLS.map(COL => (
+                  <td key={COL}>{ COL }</td>
+                ))
+              }
+            </tr>
+          </thead>
+          <tbody>
             {
-              COLS.map(COL => (
-                <td key={COL}>{ COL }</td>
+              ROWS.map(ROW => (
+                <tr key={ROW}>
+                  <td>{ ROW }</td>
+                  {
+                    COLS.map(COL => (
+                      <td key={`${ROW}-${COL}`} className={this.cellClass()}>{ this.state.data[ROW][COL] }</td>
+                    ))
+                  }
+                </tr>
               ))
             }
-          </tr>
-        </thead>
-        <tbody>
-          {
-            ROWS.map(ROW => (
-              <tr key={ROW}>
-                <td>{ ROW }</td>
-                {
-                  COLS.map(COL => (
-                    <td key={`${ROW}-${COL}`} className={this.cellClass()}>{ this.state.data[ROW][COL] }</td>
-                  ))
-                }
-              </tr>
-            ))
-          }
-        </tbody>
-      </table>
+          </tbody>
+        </table>
+      </div>
     )
   }
 }
