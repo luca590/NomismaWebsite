@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import {AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'Recharts'
+import {AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts'
 
 const data = [
   {name: '12/1/1', BTC: 4000, ETH: 2400, XRP: 2400},
